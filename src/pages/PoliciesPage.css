@@ -1,0 +1,386 @@
+/* ==========================================================================
+   PoliciesPage.css - All-in-One Legal & Institutional Policies Page
+   ========================================================================== */
+
+.policies-page-view {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding-bottom: 5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Policy Navigation Tabs Bar
+   -------------------------------------------------------------------------- */
+.policies-nav-section {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.policies-tabs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+.policies-tabs-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.policy-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.policy-tab-btn:hover {
+  background: #e2e8f0;
+  color: #0a65cc;
+  transform: translateY(-1px);
+}
+
+.policy-tab-btn.active {
+  background: linear-gradient(135deg, #0a65cc 0%, #0284c7 100%);
+  color: #ffffff;
+  border-color: #0a65cc;
+  box-shadow: 0 4px 14px rgba(10, 101, 204, 0.28);
+  transform: translateY(-1px);
+}
+
+.tab-icon {
+  font-size: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   Policy Main Content Container
+   -------------------------------------------------------------------------- */
+.policy-content-section {
+  padding: 3rem 1rem 1rem;
+}
+
+.policy-card-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.07);
+  padding: 3rem 3.5rem;
+  position: relative;
+}
+
+/* Header inside Policy Card */
+.policy-header-block {
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 1.75rem;
+  margin-bottom: 2.25rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.policy-title-wrap {
+  flex: 1;
+  min-width: 280px;
+}
+
+.policy-effective-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 0.65rem;
+}
+
+.policy-main-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.3px;
+  font-family: var(--font-heading, system-ui);
+}
+
+.policy-domain-sub {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.policy-action-btns {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-policy-print {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-policy-print:hover {
+  background: #f1f5f9;
+  color: #0a65cc;
+  border-color: #0a65cc;
+}
+
+/* --------------------------------------------------------------------------
+   Policy Clauses / Sections (Structured Articles)
+   -------------------------------------------------------------------------- */
+.policy-body-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.policy-clause-item {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 14px;
+  padding: 1.75rem 2rem;
+  transition: all 0.2s ease;
+}
+
+.policy-clause-item:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.clause-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.clause-number-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #e0f2fe;
+  color: #0a65cc;
+  font-size: 0.92rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.clause-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.clause-text {
+  font-size: 0.95rem;
+  color: #334155;
+  margin: 0 0 1rem;
+  line-height: 1.7;
+}
+
+.clause-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Policy Bullet Lists */
+.policy-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.policy-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.93rem;
+  color: #334155;
+  line-height: 1.55;
+}
+
+.list-check-icon {
+  color: #0a65cc;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* Alert / Warning Highlight Card inside Policies */
+.policy-alert-box {
+  background: #fef2f2;
+  border-left: 4px solid #ef4444;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  font-size: 0.92rem;
+  color: #991b1b;
+}
+
+.policy-info-box {
+  background: #f0fdf4;
+  border-left: 4px solid #16a34a;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  font-size: 0.92rem;
+  color: #166534;
+}
+
+/* --------------------------------------------------------------------------
+   Help & Contact Banner at bottom of Policies
+   -------------------------------------------------------------------------- */
+.policy-support-banner {
+  margin-top: 3.5rem;
+  background: linear-gradient(135deg, #0c1524 0%, #0d2850 100%);
+  border-radius: 16px;
+  padding: 2.25rem 2.5rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-shadow: 0 16px 36px rgba(12, 21, 36, 0.15);
+}
+
+.support-banner-texts h4 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff !important;
+  margin: 0 0 0.45rem;
+  letter-spacing: -0.2px;
+}
+
+.support-banner-texts p {
+  font-size: 0.95rem;
+  color: #e2e8f0 !important;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.support-contact-pills {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.support-pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.support-pill-link:hover {
+  background: #ffffff;
+  color: #0c1524;
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   Print Mode Optimization
+   -------------------------------------------------------------------------- */
+@media print {
+  .policies-nav-section,
+  .policy-action-btns,
+  .policy-support-banner,
+  .meditalk-header,
+  .site-footer,
+  .page-banner {
+    display: none !important;
+  }
+
+  body, .policies-page-view {
+    background: #ffffff !important;
+    padding: 0 !important;
+  }
+
+  .policy-card-wrapper {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 1cm !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Adjustments
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .policy-card-wrapper {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .policy-header-block {
+    flex-direction: column;
+  }
+
+  .policy-main-title {
+    font-size: 1.6rem;
+  }
+
+  .policy-clause-item {
+    padding: 1.25rem;
+  }
+
+  .policy-support-banner {
+    padding: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .support-contact-pills {
+    justify-content: center;
+  }
+}

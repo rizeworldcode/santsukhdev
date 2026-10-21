@@ -1,0 +1,176 @@
+.donate-modal-box {
+  max-width: 520px;
+  width: 92%;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.22);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.donate-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.donate-icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fef2f2;
+  color: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.8rem;
+}
+
+.donate-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+}
+
+.donate-subtitle {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.donate-quote-card {
+  background: #f8fafc;
+  border-left: 3px solid #1374f6;
+  padding: 0.85rem 1rem;
+  border-radius: 0 10px 10px 0;
+  margin-bottom: 1.3rem;
+}
+
+.donate-quote-card p {
+  font-size: 0.88rem;
+  color: #334155;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.donate-details-card {
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.card-section-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.85rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.45rem 0;
+  border-bottom: 1px dashed #cbd5e1;
+  font-size: 0.88rem;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.detail-value {
+  color: #0f172a;
+  font-weight: 600;
+  text-align: right;
+}
+
+.detail-value.mono {
+  font-family: monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.upi-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.upi-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.upi-label {
+  font-size: 0.76rem;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.upi-id {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  font-family: monospace;
+}
+
+.copy-upi-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.85rem;
+  background: #ffffff;
+  border: 1px solid #93c5fd;
+  color: #1d4ed8;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-upi-btn:hover {
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+.tax-exemption-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+  color: #166534;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  margin-bottom: 1.1rem;
+  line-height: 1.45;
+}
+
+.shield-icon {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.donate-contact-row {
+  text-align: center;
+  font-size: 0.84rem;
+  color: #475569;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,575 @@
+/* Ambulance Booking Section */
+.ambulance-section {
+  background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 50%, #f8fafc 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.ambulance-header-wrap {
+  margin-bottom: 2.5rem;
+}
+
+/* Metallic Blue Plaque Banner matching user image */
+.ambulance-plaque-banner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #0b2f6b 0%, #1557bf 50%, #0b2f6b 100%);
+  color: #ffffff;
+  padding: 0.85rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(11, 47, 107, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.4);
+  border: 2px solid #2563eb;
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+/* Plaque Screws / Bolts Effect */
+.ambulance-plaque-banner::before,
+.ambulance-plaque-banner::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e2e8f0 30%, #64748b 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), inset 0 1px 1px #fff;
+}
+
+.ambulance-plaque-banner::before {
+  left: 12px;
+}
+
+.ambulance-plaque-banner::after {
+  right: 12px;
+}
+
+.plaque-title {
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.plaque-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+  color: #93c5fd;
+  animation: amb-pulse 3s infinite ease-in-out;
+}
+
+.plaque-icon.right-icon {
+  transform: scaleX(-1);
+  animation-delay: 1.5s;
+}
+
+@keyframes amb-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.plaque-icon.right-icon {
+  animation-name: amb-pulse-flip;
+}
+
+@keyframes amb-pulse-flip {
+  0%, 100% { transform: scaleX(-1) scale(1); }
+  50% { transform: scaleX(-1) scale(1.1); }
+}
+
+/* Grid Layout */
+.ambulance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+/* Card Styling */
+.ambulance-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1.5px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  padding: 2.2rem 2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  overflow: hidden;
+}
+
+.ambulance-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(10, 101, 204, 0.16);
+  border-color: #0a65cc;
+}
+
+.ambulance-card.featured-card {
+  border-color: #dc2626;
+  background: linear-gradient(180deg, #ffffff 0%, #fffbfb 100%);
+  box-shadow: 0 12px 32px rgba(220, 38, 38, 0.08);
+}
+
+.ambulance-card.featured-card:hover {
+  border-color: #b91c1c;
+  box-shadow: 0 22px 48px rgba(220, 38, 38, 0.18);
+}
+
+/* Ribbon for Critical Care */
+.popular-badge-ribbon {
+  position: absolute;
+  top: 18px;
+  right: -36px;
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.35rem 2.8rem;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.4);
+}
+
+/* Card Top */
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.amb-icon-wrap {
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0a65cc 0%, #1789eb 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 8px 18px rgba(10, 101, 204, 0.25);
+}
+
+.featured-card .amb-icon-wrap {
+  background: linear-gradient(135deg, #dc2626 0%, #f87171 100%);
+  box-shadow: 0 8px 18px rgba(220, 38, 38, 0.25);
+}
+
+.amb-top-meta {
+  flex-grow: 1;
+}
+
+.amb-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.45rem;
+}
+
+.amb-badge.badge-blue {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.amb-badge.badge-red {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.amb-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 0.25rem;
+}
+
+.amb-subtitle {
+  display: block;
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+/* Price Banner */
+.amb-price-banner {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1.1rem 1.4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.featured-card .amb-price-banner {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.price-main {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #0a65cc;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.featured-card .price-main {
+  color: #dc2626;
+}
+
+.price-caption {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Features List */
+.amb-features {
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.features-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 0.85rem;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.88rem;
+  color: #334155;
+  line-height: 1.4;
+}
+
+.feat-check-icon {
+  color: #16a34a;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* Contact Strip */
+.amb-contact-box {
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.35rem;
+  border: 1px solid #e2e8f0;
+}
+
+.contact-title {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 0.5rem;
+}
+
+.contact-title svg {
+  color: #0a65cc;
+}
+
+.contact-links-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.contact-pill-btn {
+  flex: 1;
+  min-width: 140px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.45rem 0.7rem;
+  text-decoration: none;
+  color: #0f172a;
+  transition: all 0.2s ease;
+}
+
+.contact-pill-btn:hover {
+  background: #0a65cc;
+  border-color: #0a65cc;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.contact-type {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.contact-pill-btn:hover .contact-type {
+  color: #e0f2fe;
+}
+
+.contact-num {
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+/* Action Buttons */
+.amb-action-row {
+  margin-bottom: 0.85rem;
+}
+
+.amb-book-btn {
+  width: 100%;
+  padding: 0.85rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, #0a65cc 0%, #1789eb 100%);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(10, 101, 204, 0.25);
+}
+
+.amb-book-btn:hover {
+  background: linear-gradient(135deg, #084ea3 0%, #0a65cc 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(10, 101, 204, 0.35);
+}
+
+.featured-card .amb-book-btn {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.25);
+}
+
+.featured-card .amb-book-btn:hover {
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.35);
+}
+
+/* Disclaimer text */
+.amb-disclaimer {
+  text-align: right;
+  font-size: 0.78rem;
+  color: #64748b;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.3rem;
+}
+
+.disclaimer-en {
+  font-weight: 600;
+  color: #475569;
+}
+
+/* 24x7 Emergency Contact Strip */
+.ambulance-emergency-banner {
+  margin-top: 3rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 20px;
+  padding: 1.6rem 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.emergency-icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.96); box-shadow: 0 0 10px rgba(220, 38, 38, 0.4); }
+  50% { transform: scale(1.04); box-shadow: 0 0 25px rgba(220, 38, 38, 0.7); }
+  100% { transform: scale(0.96); box-shadow: 0 0 10px rgba(220, 38, 38, 0.4); }
+}
+
+.emergency-banner-info {
+  flex-grow: 1;
+}
+
+.emergency-banner-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.emergency-banner-desc {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.emergency-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+.btn-call-emergency {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  color: #ffffff;
+  padding: 0.75rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.4);
+  transition: all 0.25s ease;
+}
+
+.btn-call-emergency:hover {
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(220, 38, 38, 0.5);
+}
+
+.btn-call-landline {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.75rem 1.3rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+
+.btn-call-landline:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .ambulance-emergency-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+  .emergency-banner-actions {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ambulance-grid {
+    grid-template-columns: 1fr;
+  }
+  .ambulance-plaque-banner {
+    padding: 0.75rem 1.5rem;
+    gap: 1rem;
+  }
+  .plaque-title {
+    font-size: 1.3rem;
+  }
+  .plaque-icon {
+    font-size: 1.6rem;
+  }
+  .emergency-banner-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-call-emergency,
+  .btn-call-landline {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ambulance-plaque-banner {
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+    gap: 0.5rem;
+  }
+  .plaque-title {
+    font-size: 1.05rem;
+    text-align: center;
+  }
+  .plaque-icon {
+    font-size: 1.25rem;
+  }
+  .ambulance-card {
+    padding: 1.5rem 1.15rem;
+  }
+  .card-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+  .contact-links-row {
+    flex-direction: column;
+  }
+  .contact-pill-btn {
+    width: 100%;
+  }
+  .price-main {
+    font-size: 1.85rem;
+  }
+}

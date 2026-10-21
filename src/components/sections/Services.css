@@ -1,0 +1,573 @@
+/* ========================================================
+   SERVICES / LAB TEST INVESTIGATION SECTION
+   ======================================================== */
+.services-investigation-section {
+  background-color: #f8fafc;
+  padding: 4.5rem 0 5rem;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #edf2f7;
+}
+
+.services-layout {
+  max-width: 1680px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* --------------------------------------------------------
+   Header Row & Search Box
+   -------------------------------------------------------- */
+.services-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.75rem;
+  flex-wrap: wrap;
+}
+
+.services-title-col {
+  max-width: 760px;
+}
+
+.services-badge {
+  display: inline-block;
+  background: #eff6ff;
+  color: #0a65cc;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.95rem;
+  border-radius: 999px;
+  letter-spacing: 0.6px;
+  margin-bottom: 0.8rem;
+  border: 1px solid #dbeafe;
+}
+
+.services-main-title {
+  font-size: 2.35rem;
+  font-weight: 800;
+  color: #0c1524;
+  line-height: 1.2;
+  margin: 0 0 0.65rem;
+  font-family: var(--font-heading);
+}
+
+.services-subtitle {
+  font-size: 1.02rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Search Box (As on user board: Search Test...) */
+.services-search-wrapper {
+  min-width: 300px;
+}
+
+.services-search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 0.65rem 1.2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+.services-search-box:focus-within {
+  border-color: #0a65cc;
+  box-shadow: 0 0 0 4px rgba(10, 101, 204, 0.12);
+}
+
+.search-icon {
+  color: #0a65cc;
+  flex-shrink: 0;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 0.94rem;
+  color: #1e293b;
+  font-family: inherit;
+}
+
+.search-input::placeholder {
+  color: #94a3b8;
+}
+
+.search-clear-btn {
+  background: #e2e8f0;
+  border: none;
+  color: #64748b;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.search-clear-btn:hover {
+  background: #cbd5e1;
+  color: #0f172a;
+}
+
+/* --------------------------------------------------------
+   8 Investigation Cards Grid (4 Columns Desktop)
+   -------------------------------------------------------- */
+.investigations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.investigation-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  position: relative;
+}
+
+.investigation-card:hover {
+  transform: translateY(-5px);
+  border-color: #93c5fd;
+  box-shadow: 0 16px 32px rgba(10, 101, 204, 0.12);
+}
+
+/* Card Image */
+.investigation-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.investigation-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.investigation-card:hover .investigation-img {
+  transform: scale(1.06);
+}
+
+.investigation-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(12, 21, 36, 0.75);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  letter-spacing: 0.3px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Card Body */
+.investigation-info {
+  padding: 1.35rem 1.4rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.investigation-title-en {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #0c1524;
+  margin: 0 0 0.25rem;
+  font-family: var(--font-heading);
+  line-height: 1.25;
+}
+
+.investigation-title-hi {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #0a65cc;
+  margin-bottom: 0.65rem;
+  display: block;
+}
+
+.investigation-desc {
+  font-size: 0.86rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Card Bottom Action */
+.investigation-card-action {
+  padding: 0 1.4rem 1.35rem;
+}
+
+.btn-book-investigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.68rem 1rem;
+  background: #f8fafc;
+  color: #0a65cc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-book-investigation .action-arrow {
+  transition: transform 0.2s ease;
+}
+
+.investigation-card:hover .btn-book-investigation {
+  background: #0a65cc;
+  color: #ffffff;
+  border-color: #0a65cc;
+  box-shadow: 0 4px 12px rgba(10, 101, 204, 0.25);
+}
+
+.investigation-card:hover .btn-book-investigation .action-arrow {
+  transform: translateX(3px);
+}
+
+/* Search empty state */
+.no-tests-found {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: #ffffff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 20px;
+  margin-bottom: 3.5rem;
+}
+
+.no-tests-found p {
+  font-size: 1.05rem;
+  color: #64748b;
+  margin-bottom: 1.2rem;
+}
+
+/* --------------------------------------------------------
+   Home Collection Facility Section
+   -------------------------------------------------------- */
+.home-collection-container {
+  margin-bottom: 3.5rem;
+}
+
+.home-collection-grid {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+  border: 1.5px solid #dbeafe;
+  border-radius: 28px;
+  padding: 2.2rem 2.8rem;
+  box-shadow: 0 12px 35px rgba(10, 101, 204, 0.06);
+}
+
+/* Scooter Illustration */
+.home-collection-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.scooter-img-card {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+  border: 4px solid #ffffff;
+}
+
+.scooter-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.scooter-img-card:hover .scooter-img {
+  transform: scale(1.03);
+}
+
+.collection-floating-tag {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  right: 14px;
+  background: rgba(12, 21, 36, 0.85);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 0.55rem 0.9rem;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+/* Plaque & Details */
+.home-collection-card {
+  padding-left: 0.5rem;
+}
+
+.collection-kicker {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+}
+
+.collection-heading {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: #0c1524;
+  margin: 0 0 0.5rem;
+  font-family: var(--font-heading);
+  letter-spacing: -0.3px;
+}
+
+.collection-note {
+  font-size: 1.05rem;
+  color: #0a65cc;
+  margin: 0 0 0.65rem;
+  font-weight: 600;
+}
+
+.collection-desc-hi {
+  font-size: 0.94rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 1.6rem;
+}
+
+.collection-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.1rem;
+}
+
+.btn-add-collection {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: linear-gradient(135deg, #0a65cc 0%, #1789eb 100%);
+  color: #ffffff;
+  padding: 0.85rem 1.85rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(10, 101, 204, 0.3);
+  transition: all 0.25s ease;
+}
+
+.btn-add-collection:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(10, 101, 204, 0.4);
+}
+
+.btn-collection-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  color: #0c1524;
+  padding: 0.8rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border: 1px solid #cbd5e1;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-collection-call:hover {
+  border-color: #0a65cc;
+  color: #0a65cc;
+}
+
+.collection-disclaimer {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-style: italic;
+  padding-top: 0.4rem;
+}
+
+/* --------------------------------------------------------
+   Bottom Trust Banner (Safe, Secure, Seamless)
+   -------------------------------------------------------- */
+/* --------------------------------------------------------
+   Bottom Trust Banner (Safe, Secure, Seamless)
+   -------------------------------------------------------- */
+.services-trust-banner {
+  background: linear-gradient(135deg, #0c1524 0%, #0d2850 100%);
+  border-radius: 24px;
+  padding: 2.2rem 2.5rem;
+  box-shadow: 0 16px 36px rgba(12, 21, 36, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.services-trust-banner .trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.services-trust-banner .trust-card {
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  padding: 1.4rem 1.6rem !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 1.15rem !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.services-trust-banner .trust-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22) !important;
+}
+
+.services-trust-banner .trust-icon-box {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.3) !important;
+}
+
+.services-trust-banner .safe-icon {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.services-trust-banner .secure-icon {
+  background: linear-gradient(135deg, #0a65cc 0%, #1e40af 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.services-trust-banner .seamless-icon {
+  background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.services-trust-banner .trust-text-wrap {
+  flex: 1;
+}
+
+.services-trust-banner .trust-title {
+  font-size: 1.25rem !important;
+  font-weight: 900 !important;
+  color: #0c1524 !important;
+  margin: 0 0 0.35rem 0 !important;
+  letter-spacing: 1px !important;
+  font-family: var(--font-heading) !important;
+  line-height: 1.2 !important;
+}
+
+.services-trust-banner .trust-desc {
+  font-size: 0.84rem !important;
+  color: #334155 !important;
+  line-height: 1.45 !important;
+  margin: 0 !important;
+  font-weight: 500 !important;
+}
+
+/* --------------------------------------------------------
+   Responsive Breakpoints
+   -------------------------------------------------------- */
+@media (max-width: 1200px) {
+  .investigations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home-collection-grid {
+    grid-template-columns: 360px 1fr;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-collection-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .home-collection-card {
+    padding-left: 0;
+  }
+  .collection-actions-row {
+    justify-content: center;
+  }
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .investigations-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-header-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .services-search-wrapper {
+    width: 100%;
+  }
+  .services-main-title {
+    font-size: 1.85rem;
+  }
+  .collection-heading {
+    font-size: 1.65rem;
+  }
+  .services-trust-banner {
+    padding: 1.75rem 1.25rem;
+  }
+}

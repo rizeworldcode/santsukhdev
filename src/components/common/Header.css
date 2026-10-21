@@ -1,0 +1,312 @@
+.meditalk-header {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0.65rem 0 0.35rem;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+}
+
+.meditalk-header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.meditalk-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  margin-left: 0;
+  position: relative;
+  left: 18px;
+  transition: transform 0.2s ease;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.brand-logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.brand-logo-img {
+  height: 76px;
+  width: auto;
+  max-width: 88px;
+  object-fit: contain;
+  display: block;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.brand-text-block {
+  display: flex;
+  flex-direction: column;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.brand-title {
+  font-size: 1.48rem;
+  font-weight: 700;
+  color: #0b132b;
+  letter-spacing: -0.2px;
+  line-height: 1.2;
+}
+
+.brand-sub {
+  font-size: 0.84rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+/* Nav */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -60px;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.35rem;
+  margin: 0;
+  padding: 0;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.nav-list li {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.nav-item-link {
+  font-size: 0.96rem;
+  font-weight: 500;
+  color: #475569;
+  transition: color 0.2s ease;
+  padding: 0.2rem 0;
+  background: transparent !important;
+  background-color: transparent !important;
+  border-radius: 0;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.nav-item-link:hover {
+  color: #0a65cc;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.nav-item-link.active {
+  color: #0a65cc !important;
+  font-weight: 700 !important;
+  position: relative;
+}
+
+.nav-item-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background: linear-gradient(90deg, #0a65cc, #0284c7);
+  border-radius: 9999px;
+}
+
+.nav-item-link.nav-donate-pill {
+  color: #0284c7 !important;
+  font-weight: 700;
+  position: relative;
+}
+
+.nav-item-link.nav-donate-pill:hover {
+  color: #0369a1 !important;
+}
+
+.mobile-item-link.mobile-donate-pill {
+  color: #0284c7 !important;
+  font-weight: 700;
+}
+
+/* Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Report Download Nav Action Button (Right of Donate) */
+.nav-item-report-li {
+  display: flex;
+  align-items: center;
+  margin-left: 0.35rem;
+}
+
+.btn-nav-report {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.48rem 1.05rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #0a65cc 0%, #0284c7 100%);
+  color: #ffffff !important;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(10, 101, 204, 0.22);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}
+
+.btn-nav-report:hover {
+  background: linear-gradient(135deg, #084ea3 0%, #0369a1 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(10, 101, 204, 0.32);
+}
+
+.btn-nav-report.active {
+  box-shadow: 0 0 0 2px #0a65cc, 0 6px 16px rgba(10, 101, 204, 0.4);
+}
+
+.nav-report-icon {
+  font-size: 0.95rem;
+}
+
+.mobile-report-link {
+  color: #0a65cc !important;
+  font-weight: 700 !important;
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #0f172a;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+/* Mobile Drawer */
+.mobile-drawer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  border-top: 1px solid #f1f5f9;
+  z-index: 99;
+}
+
+.mobile-menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-item-link {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #0f172a;
+  display: block;
+  padding: 0.4rem 0;
+  transition: all 0.2s ease;
+}
+
+.mobile-item-link.active {
+  color: #0a65cc !important;
+  font-weight: 700 !important;
+  padding-left: 0.6rem;
+  border-left: 3px solid #0a65cc;
+}
+
+.btn-donate-mobile {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  text-align: left;
+  width: 100%;
+}
+
+.mobile-btn-wrap {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1100px) {
+  .meditalk-header .header-container {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .meditalk-brand {
+    left: 0;
+  }
+  .desktop-nav,
+  .desktop-only {
+    display: none !important;
+  }
+  .header-actions {
+    margin-left: auto;
+  }
+  .mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo-img {
+    height: 42px;
+    max-width: 48px;
+  }
+  .brand-title {
+    font-size: 1.05rem;
+  }
+  .brand-sub {
+    font-size: 0.65rem;
+  }
+  .mobile-drawer {
+    padding: 1.25rem 1rem;
+  }
+  .mobile-item-link {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+}

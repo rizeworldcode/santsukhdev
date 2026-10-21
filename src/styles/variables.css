@@ -1,0 +1,51 @@
+:root {
+  /* Color Palette - Premium Healthcare */
+  --primary: #0a65cc;
+  --primary-dark: #074794;
+  --primary-light: #e8f2fc;
+  --primary-gradient: linear-gradient(135deg, #0a65cc 0%, #1789eb 100%);
+  
+  --secondary: #00a896;
+  --secondary-dark: #028090;
+  --secondary-light: #e6f7f5;
+  --secondary-gradient: linear-gradient(135deg, #00a896 0%, #02c39a 100%);
+
+  --accent: #ff6b6b;
+  --emergency: #e63946;
+  --emergency-light: #ffebee;
+  --warning: #f59e0b;
+  --success: #10b981;
+
+  /* Neutrals & Dark Theme Support */
+  --bg-main: #ffffff;
+  --bg-card: #ffffff;
+  --bg-surface: #f1f5f9;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  --border-color: #e2e8f0;
+  --border-light: #f1f5f9;
+
+  /* Typography with Hindi Devanagari Support */
+  --font-heading: 'Outfit', 'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Noto Sans Devanagari', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-glow: 0 0 20px rgba(10, 101, 204, 0.18);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}

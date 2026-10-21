@@ -1,0 +1,541 @@
+.departments-section {
+  background-color: #ffffff;
+  padding: 3.8rem 0 4.8rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  content-visibility: auto;
+  contain-intrinsic-size: 800px;
+}
+
+.departments-layout {
+  max-width: 1680px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header Row */
+.dept-section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.8rem;
+  flex-wrap: wrap;
+}
+
+.dept-header-left {
+  max-width: 760px;
+}
+
+.dept-badge {
+  display: inline-block;
+  background: #eff6ff;
+  color: #0a65cc;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.95rem;
+  border-radius: 999px;
+  letter-spacing: 0.6px;
+  margin-bottom: 0.8rem;
+  border: 1px solid #dbeafe;
+}
+
+.dept-title {
+  font-size: 2.35rem;
+  font-weight: 800;
+  color: #0c1524;
+  line-height: 1.2;
+  margin: 0 0 0.65rem;
+  font-family: var(--font-heading);
+}
+
+.dept-subtitle {
+  font-size: 1.02rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Team of Doctors Button */
+.btn-team-doctors {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.78rem 1.6rem;
+  background: #ffffff;
+  color: #0a65cc;
+  border: 1.5px solid #bfdbfe;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(10, 101, 204, 0.08);
+  white-space: nowrap;
+}
+
+.btn-team-doctors:hover {
+  background: #0a65cc;
+  color: #ffffff;
+  border-color: #0a65cc;
+  box-shadow: 0 6px 18px rgba(10, 101, 204, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn-team-doctors .team-arrow {
+  transition: transform 0.2s ease;
+}
+
+.btn-team-doctors:hover .team-arrow {
+  transform: translateX(4px);
+}
+
+/* Grid of 13 Department Cards (Comfortable gap for tilted postal cards) */
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.2rem 1.85rem;
+  padding: 1.5rem 0.5rem;
+}
+
+/* ==========================================================================
+   Postal Reveal / Glimpse Card (Framer Postal-Reavel-Card-XTixRN)
+   ========================================================================== */
+
+.postal-card-wrapper {
+  position: relative;
+  overflow: visible;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* 1. Postal Reveal Photo Layer (Brought IN FRONT on hover: z-index: 10) */
+.postal-reveal-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.96) rotate(0deg);
+  transition: transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              opacity 0.3s ease,
+              box-shadow 0.4s ease,
+              z-index 0s ease 0.3s;
+  border: 3px solid #ffffff;
+  box-shadow: 0 10px 25px rgba(10, 101, 204, 0.15);
+  background-color: #0f172a;
+}
+
+.postal-reveal-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+/* Gradient Overlay on Photo for Rich Readability */
+.postal-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.35) 0%,
+    rgba(15, 23, 42, 0.05) 30%,
+    rgba(15, 23, 42, 0.72) 65%,
+    rgba(15, 23, 42, 0.96) 100%
+  );
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+/* Top Header on Photo: Glass Icon + Stamp Tag */
+.postal-photo-top {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+.postal-photo-icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.postal-photo-stamp {
+  background: rgba(14, 165, 233, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Bottom Info on Photo: Titles, Description & Action */
+.postal-photo-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 1.4rem 1.3rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: #ffffff;
+}
+
+.postal-photo-title-en {
+  font-size: 1.28rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0;
+  font-family: var(--font-heading);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.postal-photo-title-hi {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #38bdf8;
+  line-height: 1.3;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.postal-photo-desc {
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.45;
+  margin: 0.25rem 0 0.55rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.postal-photo-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.postal-photo-arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #0ea5e9;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(14, 165, 233, 0.5);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+/* Hover & Touch Active State: Bring Photo IN FRONT (z-index: 10) with Postal Angle Tilt */
+.postal-card-wrapper:hover .postal-reveal-photo,
+.postal-card-wrapper.is-revealed .postal-reveal-photo,
+.postal-card-wrapper:focus-visible .postal-reveal-photo {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  z-index: 10 !important;
+  box-shadow: 0 26px 52px -10px rgba(10, 101, 204, 0.38), 0 10px 22px rgba(0, 0, 0, 0.18) !important;
+  transition: transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              opacity 0.3s ease,
+              box-shadow 0.4s ease,
+              z-index 0s;
+}
+
+.postal-card-wrapper:hover .postal-photo-arrow,
+.postal-card-wrapper.is-revealed .postal-photo-arrow {
+  transform: translateX(4px);
+  background: #38bdf8;
+}
+
+/* Right Angle Variant (rotate: 2.8deg in front) */
+.postal-card-wrapper.angle-right:hover .postal-reveal-photo,
+.postal-card-wrapper.angle-right.is-revealed .postal-reveal-photo,
+.postal-card-wrapper.angle-right:focus-visible .postal-reveal-photo {
+  transform: scale(1.035) translateY(-8px) rotate(2.8deg) !important;
+}
+
+.postal-card-wrapper.angle-right:hover .postal-reveal-photo img,
+.postal-card-wrapper.angle-right.is-revealed .postal-reveal-photo img {
+  transform: scale(1.05);
+}
+
+/* Left Angle Variant (rotate: -2.8deg in front) */
+.postal-card-wrapper.angle-left:hover .postal-reveal-photo,
+.postal-card-wrapper.angle-left.is-revealed .postal-reveal-photo,
+.postal-card-wrapper.angle-left:focus-visible .postal-reveal-photo {
+  transform: scale(1.035) translateY(-8px) rotate(-2.8deg) !important;
+}
+
+.postal-card-wrapper.angle-left:hover .postal-reveal-photo img,
+.postal-card-wrapper.angle-left.is-revealed .postal-reveal-photo img {
+  transform: scale(1.05);
+}
+
+/* 2. Front Glassmorphic Card Surface */
+.postal-card-front {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  min-height: 310px;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  border-radius: 20px;
+  padding: 1.85rem 1.65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
+  transform: translateZ(0);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease,
+              background-color 0.3s ease;
+}
+
+.postal-card-wrapper:hover .postal-card-front,
+.postal-card-wrapper.is-revealed .postal-card-front,
+.postal-card-wrapper:focus-visible .postal-card-front {
+  opacity: 0 !important;
+  transform: scale(0.97) !important;
+  transition: opacity 0.25s ease, transform 0.3s ease;
+}
+
+/* Top Bar: Icon Capsule & Framer-style Plus Badge */
+.postal-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.dept-icon-wrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #eff6ff;
+  color: #0a65cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #dbeafe;
+}
+
+.postal-card-wrapper:hover .dept-icon-wrapper {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0a65cc 100%);
+  color: #ffffff;
+  border-color: transparent;
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(14, 165, 233, 0.35);
+}
+
+/* Framer-style Circular Plus Badge */
+.framer-plus-badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.postal-card-wrapper:hover .framer-plus-badge {
+  background: #0ea5e9;
+  color: #ffffff;
+  border-color: #0ea5e9;
+  transform: rotate(90deg) scale(1.1);
+  box-shadow: 0 3px 10px rgba(14, 165, 233, 0.35);
+}
+
+/* Card Body */
+.postal-card-body {
+  flex: 1;
+  margin-bottom: 1.25rem;
+}
+
+.dept-name-en {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  margin: 0 0 0.3rem;
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+.dept-name-hi {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0ea5e9;
+  line-height: 1.35;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+.dept-card-desc {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Card Bottom Action */
+.postal-card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+  color: #64748b;
+  font-size: 0.86rem;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.postal-card-wrapper:hover .postal-card-action {
+  color: #0a65cc;
+}
+
+.action-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.postal-card-wrapper:hover .action-circle {
+  background: linear-gradient(135deg, #0ea5e9, #0a65cc);
+  color: #ffffff;
+  border-color: transparent;
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .departments-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .departments-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+  }
+  
+  .dept-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .dept-title {
+    font-size: 1.75rem;
+  }
+
+  .btn-team-doctors {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Full dynamic postal reveal rotation on mobile & touch & hover */
+  .postal-card-wrapper.angle-right:hover .postal-reveal-photo,
+  .postal-card-wrapper.angle-right:active .postal-reveal-photo,
+  .postal-card-wrapper.angle-right.is-revealed .postal-reveal-photo {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    z-index: 10 !important;
+    transform: scale(1.035) rotate(2.8deg) translateY(-8px) !important;
+    box-shadow: 0 24px 48px -8px rgba(10, 101, 204, 0.4), 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .postal-card-wrapper.angle-left:hover .postal-reveal-photo,
+  .postal-card-wrapper.angle-left:active .postal-reveal-photo,
+  .postal-card-wrapper.angle-left.is-revealed .postal-reveal-photo {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    z-index: 10 !important;
+    transform: scale(1.035) rotate(-2.8deg) translateY(-8px) !important;
+    box-shadow: 0 24px 48px -8px rgba(10, 101, 204, 0.4), 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .postal-card-wrapper:hover .postal-card-front,
+  .postal-card-wrapper:active .postal-card-front,
+  .postal-card-wrapper.is-revealed .postal-card-front {
+    opacity: 0 !important;
+    transform: scale(0.97) !important;
+    pointer-events: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .postal-card-front {
+    padding: 1.5rem 1.25rem;
+    min-height: 290px;
+  }
+  .dept-name-en {
+    font-size: 1.18rem;
+  }
+  .dept-card-desc {
+    font-size: 0.84rem;
+  }
+  .postal-photo-bottom {
+    padding: 1.2rem 1.1rem 1rem;
+  }
+  .postal-photo-title-en {
+    font-size: 1.15rem;
+  }
+}
