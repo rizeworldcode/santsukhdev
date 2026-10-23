@@ -107,19 +107,19 @@ export default function AppointmentModal({ isOpen, onClose, initialService }) {
                       <option value="एक्यूप्रेशर चिकित्सा (Acupressure)">एक्यूप्रेशर चिकित्सा (Acupressure)</option>
                     </optgroup>
                     <optgroup label="24x7 एम्बुलेंस सेवा">
-                      <option value="Non-Critical Care Ambulance (₹5,500*)">Non-Critical Care Ambulance (₹5,500*)</option>
-                      <option value="Critical Care Ambulance (₹10,000*)">Critical Care Ambulance (₹10,000*)</option>
+                      <option value="Non-Critical Care Ambulance (₹5,500*)">नॉन-क्रिटिकल केयर एम्बुलेंस (₹5,500*)</option>
+                      <option value="Critical Care Ambulance (₹10,000*)">क्रिटिकल केयर एम्बुलेंस / ICU ऑन व्हील्स (₹10,000*)</option>
                     </optgroup>
                     <optgroup label="लैब टेस्ट एवं जांच बुकिंग">
-                      <option value="CT Scan (कंप्यूटेड टोमोग्राफी स्कैन)">CT Scan (कंप्यूटेड टोमोग्राफी स्कैन)</option>
-                      <option value="HRCT (हाई-रेजोल्यूशन चेस्ट सीटी)">HRCT (हाई-रेजोल्यूशन चेस्ट सीटी)</option>
-                      <option value="Doppler (कलर डॉपलर व वैस्कुलर जांच)">Doppler (कलर डॉपलर व वैस्कुलर जांच)</option>
-                      <option value="NCCT (नॉन-कंट्रास्ट सीटी स्कैन)">NCCT (नॉन-कंट्रास्ट सीटी स्कैन)</option>
-                      <option value="MRI (मैग्नेटिक रेजोनेंस इमेजिंग)">MRI (मैग्नेटिक रेजोनेंस इमेजिंग)</option>
-                      <option value="UltraSound (सोनोग्राफी / 4D अल्ट्रासाउंड)">UltraSound (सोनोग्राफी / 4D अल्ट्रासाउंड)</option>
-                      <option value="PathLab Tests (पैथोलॉजी एवं रक्त जांच)">PathLab Tests (पैथोलॉजी एवं रक्त जांच)</option>
-                      <option value="Home Collection Facility (घर से सैंपल पिकअप - ₹50)">Home Collection Facility (घर से सैंपल पिकअप - ₹50)</option>
-                      <option value="Other Tests (अन्य विशेष डायग्नोस्टिक्स)">Other Tests (अन्य विशेष डायग्नोस्टिक्स)</option>
+                      <option value="CT Scan (कंप्यूटेड टोमोग्राफी स्कैन)">सीटी स्कैन - CT Scan (कंप्यूटेड टोमोग्राफी)</option>
+                      <option value="HRCT (हाई-रेजोल्यूशन चेस्ट सीटी)">एचआरसीटी - HRCT (हाई-रेजोल्यूशन चेस्ट सीटी)</option>
+                      <option value="Doppler (कलर डॉपलर व वैस्कुलर जांच)">डॉपलर - Doppler (कलर डॉपलर व वैस्कुलर जांच)</option>
+                      <option value="NCCT (नॉन-कंट्रास्ट सीटी स्कैन)">एनसीसीटी - NCCT (नॉन-कंट्रास्ट सीटी स्कैन)</option>
+                      <option value="MRI (मैग्नेटिक रेजोनेंस इमेजिंग)">एमआरआई - MRI (मैग्नेटिक रेजोनेंस इमेजिंग)</option>
+                      <option value="UltraSound (सोनोग्राफी / 4D अल्ट्रासाउंड)">अल्ट्रासाउंड - UltraSound (सोनोग्राफी / 4D)</option>
+                      <option value="PathLab Tests (पैथोलॉजी एवं रक्त जांच)">पैथोलॉजी लैब जांच (Pathology Blood Tests)</option>
+                      <option value="Home Collection Facility (घर से सैंपल पिकअप - ₹50)">घर से सैंपल कलेक्शन सुविधा (Home Collection - ₹50)</option>
+                      <option value="Other Tests (अन्य विशेष डायग्नोस्टिक्स)">अन्य विशेष डायग्नोस्टिक्स एवं टेस्ट</option>
                     </optgroup>
                   </select>
                 </div>

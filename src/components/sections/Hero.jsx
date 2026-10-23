@@ -11,18 +11,18 @@ export default function Hero({ onOpenAppointment }) {
   const santSlides = [
     {
       src: '/sant_2.avif',
-      alt: 'Sant Vasdev Shah Singh Ji Maharaj',
-      text: 'Sant Vasdev Shah Singh Ji Maharaj'
+      alt: 'संत वासुदेव शाह सिंह जी महाराज',
+      text: 'संत वासुदेव शाह सिंह जी महाराज'
     },
     {
       src: '/sant_3.avif',
-      alt: 'Santren Baba Raghbir Shah Singh Ji Maharaj',
-      text: 'Santren Baba Raghbir Shah Singh Ji Maharaj founded the educational institute in the year 2000 to provide health facilities to the society.'
+      alt: 'संतरेण बाबा रघुबीर शाह सिंह जी महाराज',
+      text: 'संतरेण बाबा रघुबीर शाह सिंह जी महाराज ने समाज को स्वास्थ्य और शिक्षा सुविधाएं प्रदान करने हेतु वर्ष 2000 में इस पावन संस्थान की नींव रखी।'
     },
     {
       src: '/sant_4.avif',
-      alt: 'Santren Dr. Shri Harbhajan Shah Singh Ji Maharaj',
-      text: 'Serving from compassion of Santren Dr. Shri Harbhajan Shah Singh Ji Maharaj with modern medical facilities for 20 Years.'
+      alt: 'संतरेण डॉ. श्री हरभजन शाह सिंह जी महाराज',
+      text: 'संतरेण डॉ. श्री हरभजन शाह सिंह जी महाराज की पावन अनुकंपा से 20 वर्षों से आधुनिक चिकित्सा सुविधाओं द्वारा निष्काम सेवा।'
     }
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -105,12 +105,12 @@ export default function Hero({ onOpenAppointment }) {
             <div className="standalone-card card-photo-fill">
               <img 
                 src="/snat_1.avif" 
-                alt="Param Hans Sant Sukhdev Shah Ji Maharaj" 
+                alt="परमहंस संत सुखदेव शाह जी महाराज" 
                 className="card-full-cover-img active"
               />
               <div className="card-caption-overlay">
-                <div className="card-caption-kicker">Param Hans</div>
-                <div className="card-caption-name">Sant Sukhdev Shah Ji Maharaj</div>
+                <div className="card-caption-kicker">परमहंस</div>
+                <div className="card-caption-name">संत सुखदेव शाह जी महाराज</div>
               </div>
             </div>
 

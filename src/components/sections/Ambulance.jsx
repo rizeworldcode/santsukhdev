@@ -24,16 +24,16 @@ export default function Ambulance({ onOpenAppointment }) {
   const ambulanceTypes = [
     {
       id: 'non-critical',
-      badge: '24×7 Available',
+      badge: '24×7 उपलब्ध',
       badgeClass: 'badge-blue',
-      title: 'Non-Critical Care Ambulance',
-      subtitle: 'सामान्य मरीजों को Hospital ले जाने के लिए Ambulance सेवा।',
+      title: 'नॉन-क्रिटिकल केयर एम्बुलेंस (Non-Critical Ambulance)',
+      subtitle: 'सामान्य मरीजों को सुरक्षित अस्पताल पहुँचाने के लिए समर्पित एम्बुलेंस सेवा।',
       price: '₹5,500*',
       availability: '24×7',
-      disclaimer: '*Staff charges extra.',
+      disclaimer: '*स्टाफ शुल्क अतिरिक्त नियमानुसार।',
       contacts: [
-        { label: 'Hospital', number: '0144-4023077', href: 'tel:01444023077' },
-        { label: 'Mobile', number: '9828582189', href: 'tel:9828582189' }
+        { label: 'अस्पताल', number: '0144-4023077', href: 'tel:01444023077' },
+        { label: 'मोबाइल', number: '9828582189', href: 'tel:9828582189' }
       ],
       features: [
         'मानक रोगी स्ट्रेचर एवं आरामदायक व्हीलचेयर',
@@ -46,17 +46,17 @@ export default function Ambulance({ onOpenAppointment }) {
     },
     {
       id: 'critical',
-      badge: 'ICU on Wheels • 24×7 Available',
+      badge: 'आईसीयू ऑन व्हील्स • 24×7 उपलब्ध',
       badgeClass: 'badge-red',
       popular: true,
-      title: 'Critical Care Ambulance',
-      subtitle: 'गंभीर मरीजों के परिवहन के लिए ICU सुविधाओं वाली Ambulance।',
+      title: 'क्रिटिकल केयर एम्बुलेंस (ICU on Wheels)',
+      subtitle: 'गंभीर मरीजों के सुरक्षित परिवहन के लिए आईसीयू सुविधाओं एवं जीवन रक्षक उपकरणों से सुसज्जित एम्बुलेंस।',
       price: '₹10,000*',
       availability: '24×7',
-      disclaimer: '*Staff and Oxygen charges extra.',
+      disclaimer: '*स्टाफ एवं ऑक्सीजन शुल्क अतिरिक्त नियमानुसार।',
       contacts: [
-        { label: 'Hospital', number: '0144-4023077', href: 'tel:01444023077' },
-        { label: 'Mobile', number: '9828582189', href: 'tel:9828582189' }
+        { label: 'अस्पताल', number: '0144-4023077', href: 'tel:01444023077' },
+        { label: 'मोबाइल', number: '9828582189', href: 'tel:9828582189' }
       ],
       features: [
         'पोर्टेबल वेंटिलेटर एवं मल्टी-पैरा पेशेंट मॉनिटर',
@@ -76,13 +76,13 @@ export default function Ambulance({ onOpenAppointment }) {
         <div className="ambulance-header-wrap text-center">
           <div className="ambulance-plaque-banner">
             <FaTruckMedical className="plaque-icon left-icon" />
-            <span className="plaque-title">Ambulance Booking</span>
+            <span className="plaque-title">एम्बुलेंस बुकिंग सेवा</span>
             <FaTruckMedical className="plaque-icon right-icon" />
           </div>
 
-          <h2 className="section-title">Book 24×7 Ambulance Service in Alwar</h2>
+          <h2 className="section-title">अलवर में 24×7 आपातकालीन एम्बुलेंस सेवा</h2>
           <p className="section-desc center-block">
-            Sant Sukhdev Shah Charitable Hospital, Alwar में मरीजों को Hospital तक सुरक्षित पहुँचाने के लिए 24 घंटे Ambulance बुकिंग की सुविधा उपलब्ध है। मरीज की जरूरत के अनुसार Non-Critical Care Ambulance या Critical Care Ambulance चुनें। बुकिंग और अधिक जानकारी के लिए Hospital से संपर्क करें।
+            संत सुखदेव शाह धर्मार्थ चिकित्सालय, अलवर में मरीजों को अस्पताल तक सुरक्षित पहुँचाने के लिए 24 घंटे आपातकालीन एम्बुलेंस सेवा उपलब्ध है। मरीज की स्थिति के अनुसार नॉन-क्रिटिकल केयर एम्बुलेंस या क्रिटिकल केयर (आईसीयू ऑन व्हील्स) एम्बुलेंस चुनें। त्वरित बुकिंग एवं सहायता के लिए तुरंत संपर्क करें।
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function Ambulance({ onOpenAppointment }) {
             <div key={amb.id} className={`ambulance-card ${amb.popular ? 'featured-card' : ''}`}>
               {amb.popular && (
                 <div className="popular-badge-ribbon">
-                  <span>ICU on Wheels</span>
+                  <span>आईसीयू ऑन व्हील्स</span>
                 </div>
               )}
 
@@ -102,7 +102,7 @@ export default function Ambulance({ onOpenAppointment }) {
                 </div>
                 <div className="amb-top-meta">
                   <span className={`amb-badge ${amb.badgeClass}`}>
-                    <FaClock size={11} /> Availability: {amb.availability}
+                    <FaClock size={11} /> सेवा: 24 घंटे उपलब्ध
                   </span>
                   <h3 className="amb-title">{amb.title}</h3>
                   <p className="amb-subtitle-desc">{amb.subtitle}</p>
@@ -112,7 +112,7 @@ export default function Ambulance({ onOpenAppointment }) {
               {/* Price Banner */}
               <div className="amb-price-banner">
                 <div className="price-main">{amb.price}</div>
-                <div className="price-caption">Availability: {amb.availability}</div>
+                <div className="price-caption">उपलब्धता: 24×7 सेवा</div>
               </div>
 
               {/* Features List */}
@@ -137,7 +137,7 @@ export default function Ambulance({ onOpenAppointment }) {
                   className="btn btn-copy-number"
                   onClick={() => handleCopyNumber('9828582189')}
                 >
-                  <span>{copiedText ? '✓ Number Copied!' : 'Copy Ambulance Booking Number'}</span>
+                  <span>{copiedText ? '✓ नंबर कॉपी हो गया!' : 'एम्बुलेंस बुकिंग नंबर कॉपी करें'}</span>
                 </button>
                 <button
                   type="button"
@@ -145,7 +145,7 @@ export default function Ambulance({ onOpenAppointment }) {
                   onClick={() => onOpenAppointment && onOpenAppointment(amb.serviceCode)}
                 >
                   <FaCalendarCheck size={15} />
-                  <span>Book Online</span>
+                  <span>ऑनलाइन बुक करें</span>
                 </button>
               </div>
 
@@ -159,33 +159,33 @@ export default function Ambulance({ onOpenAppointment }) {
 
         {/* Contact for Ambulance Booking Table / Plaque (From Page 6 of PDF) */}
         <div className="ambulance-contact-table-card">
-          <h3 className="contact-table-title">Contact for Ambulance Booking</h3>
+          <h3 className="contact-table-title">एम्बुलेंस बुकिंग संपर्क विवरण (Ambulance Booking Contact)</h3>
           
           <div className="amb-table-grid">
             <div className="amb-table-row">
-              <span className="amb-table-label">Hospital</span>
-              <strong className="amb-table-val">Sant Sukhdev Shah Charitable Hospital, Alwar</strong>
+              <span className="amb-table-label">चिकित्सा संस्थान</span>
+              <strong className="amb-table-val">संत सुखदेव शाह धर्मार्थ चिकित्सालय, अलवर</strong>
             </div>
             <div className="amb-table-row">
-              <span className="amb-table-label">Hospital Number</span>
+              <span className="amb-table-label">अस्पताल लैंडलाइन</span>
               <strong className="amb-table-val">
                 <a href="tel:01444023077">0144-4023077</a>
               </strong>
             </div>
             <div className="amb-table-row">
-              <span className="amb-table-label">Mobile Number</span>
+              <span className="amb-table-label">आपातकालीन मोबाइल</span>
               <strong className="amb-table-val">
                 <a href="tel:9828582189">9828582189</a>
               </strong>
             </div>
             <div className="amb-table-row">
-              <span className="amb-table-label">Service</span>
-              <strong className="amb-table-val">24 Hours, 7 Days a Week</strong>
+              <span className="amb-table-label">सेवा उपलब्धता</span>
+              <strong className="amb-table-val">24 घंटे, सातों दिन (24×7 तत्पर)</strong>
             </div>
           </div>
 
           <p className="amb-table-instruction">
-            Ambulance बुक करते समय मरीज की स्थिति, पिकअप का पता और Hospital का नाम बताएं। बुकिंग से पहले किराया और अतिरिक्त शुल्क की पुष्टि अवश्य करें।
+            एम्बुलेंस बुक करते समय मरीज की स्थिति, पिकअप का पूरा पता और संपर्क नंबर अवश्य बताएं। बुकिंग से पहले दूरी एवं आवश्यक चिकित्सीय सुविधाओं की पुष्टि कर लें।
           </p>
         </div>
 
@@ -195,15 +195,15 @@ export default function Ambulance({ onOpenAppointment }) {
             <FaShieldHeart size={30} />
           </div>
           <div className="emergency-banner-info">
-            <h4 className="emergency-banner-title">Call Immediately in Any Emergency</h4>
+            <h4 className="emergency-banner-title">किसी भी आपातकालीन स्थिति में तुरंत कॉल करें</h4>
             <p className="emergency-banner-desc">
-              हमारी Ambulance सेवा 24 घंटे उपलब्ध है। Alwar और आसपास के क्षेत्रों में मरीजों को Hospital पहुँचाने के लिए तुरंत संपर्क करें।
+              हमारी एम्बुलेंस सेवा 24 घंटे तत्पर है। अलवर एवं निकटवर्ती ग्रामीण व शहरी क्षेत्रों में मरीजों को सुरक्षित अस्पताल पहुँचाने हेतु तुरंत संपर्क करें।
             </p>
           </div>
           <div className="emergency-banner-actions">
             <a href="tel:9828582189" className="btn btn-call-emergency">
               <FaPhoneVolume size={15} />
-              <span>Call Now: 9828582189</span>
+              <span>कॉल करें: 9828582189</span>
             </a>
             <a href="tel:01444023077" className="btn btn-call-landline">
               <FaPhoneVolume size={15} />

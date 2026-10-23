@@ -6,7 +6,7 @@ export const hospitalInfo = {
   landlinePhone: "0144-4023077",
   receptionPhone: "8890199768",
   email: "connect.sssdc@gmail.com",
-  address: "Sukh Sagar Bhawan, 6, Manu Marg, Alwar (Rajasthan)",
+  address: "सुख सागर भवन, 6, मनु मार्ग, अलवर (राजस्थान)",
   regNo: "06/Alwar/2000-2001",
   timings: "24 घंटे आपातकालीन सेवा, आईसीयू एवं एम्बुलेंस उपलब्ध",
   opdSummer: {
