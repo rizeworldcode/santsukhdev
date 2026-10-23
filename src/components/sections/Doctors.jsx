@@ -16,96 +16,99 @@ export default function Doctors({ onOpenAppointment }) {
   const [activeCategory, setActiveCategory] = useState('all');
 
   const categories = [
-    { id: 'all', label: 'सभी विशेषज्ञ (7)' },
-    { id: 'gynae', label: 'स्त्री एवं प्रसूति रोग' },
-    { id: 'medicine', label: 'जनरल मेडिसिन' },
-    { id: 'surgery', label: 'सर्जरी विभाग' },
-    { id: 'ortho', label: 'हड्डी एवं जोड़ रोग' },
-    { id: 'pediatrics', label: 'शिशु एवं बाल रोग' }
+    { id: 'all', label: 'All Specialists' },
+    { id: 'gynaecology', label: 'Gynaecology & Obstetrics' },
+    { id: 'medicine', label: 'General Medicine' },
+    { id: 'surgery', label: 'Surgery Department' },
+    { id: 'ortho', label: 'Orthopaedics & Joints' },
+    { id: 'pediatrics', label: 'Pediatrics' }
   ];
 
   const doctors = [
     {
       id: 1,
-      name: "डॉ. अंकिता शर्मा",
-      category: "gynae",
-      specialty: "स्त्री एवं प्रसूति रोग विशेषज्ञ",
-      degree: "MBBS, MS (Obstetrics & Gynaecology)",
-      exp: "12+ वर्ष अनुभव",
-      room: "ओपीडी कक्ष सं. 103",
-      timings: "सोमवार - शनिवार (प्रातः 9:00 - दोपहर 2:00)",
+      initial: 'A',
+      name: "Dr. Ankita Sharma",
+      category: "gynaecology",
+      specialty: "Gynaecologist & Obstetrician",
+      qualification: "MBBS, MS (Obstetrics & Gynaecology)",
+      room: "103",
+      timings: "Monday–Saturday, 9:00 AM to 2:00 PM",
       image: "/doctor_1.jpg",
       objectPosition: "center 20%"
     },
     {
       id: 2,
-      name: "डॉ. विकास चौधरी",
+      initial: 'V',
+      name: "Dr. Vikas Choudhary",
       category: "surgery",
-      specialty: "जनरल एवं लेप्रोस्कोपिक सर्जन",
-      degree: "MBBS, MS (General Surgery)",
-      exp: "14+ वर्ष अनुभव",
-      room: "ओपीडी कक्ष सं. 105",
-      timings: "सोमवार - शनिवार (प्रातः 10:00 - दोपहर 3:00)",
+      specialty: "General & Laparoscopic Surgeon",
+      qualification: "MBBS, MS (General Surgery)",
+      room: "105",
+      timings: "Monday–Saturday, 10:00 AM to 3:00 PM",
       image: "/doctor_2.jpg",
       objectPosition: "center 20%"
     },
     {
       id: 3,
-      name: "डॉ. राहुल वर्मा",
+      initial: 'R',
+      name: "Dr. Rahul Sharma",
       category: "medicine",
-      specialty: "कंसल्टेंट फिजिशियन एवं हृदय रोग विशेषज्ञ",
-      degree: "MBBS, MD (General Medicine)",
-      exp: "16+ वर्ष अनुभव",
-      room: "ओपीडी कक्ष सं. 102",
-      timings: "प्रतिदिन (प्रातः 9:00 - 1:00 एवं सायं 5:00 - 7:00)",
+      specialty: "General Medicine & Chest Specialist",
+      qualification: "MBBS, MD (General Medicine)",
+      room: "102",
+      timings: "Daily, 9:00 AM–1:00 PM and 5:00–7:00 PM",
       image: "/doctor_3.jpg",
       objectPosition: "center 15%"
     },
     {
       id: 4,
-      name: "डॉ. (श्रीमती) कांता गुप्ता",
-      category: "gynae",
-      specialty: "वरिष्ठ प्रसूति एवं महिला रोग विशेषज्ञ",
-      degree: "MBBS, DGO, FICOG (सीनियर कंसल्टेंट)",
-      exp: "28+ वर्ष अनुभव",
-      room: "ओपीडी कक्ष सं. 104",
-      timings: "सोमवार - शनिवार (प्रातः 10:00 - दोपहर 1:00)",
+      initial: 'K',
+      name: "Dr. (Mrs.) Kanta Gupta",
+      category: "gynaecology",
+      specialty: "Senior Obstetrician & Gynaecologist",
+      qualification: "MBBS, DGO, FICOG",
+      room: "104",
+      timings: "Monday–Saturday, 10:00 AM to 1:00 PM",
       image: "/doctor_4.jpg",
       objectPosition: "center 20%"
     },
     {
       id: 5,
-      name: "डॉ. आर. के. गुप्ता",
+      initial: 'R',
+      name: "Dr. R. K. Gupta",
       category: "medicine",
-      specialty: "वरिष्ठ फिजिशियन एवं चेस्ट स्पेशलिस्ट",
-      degree: "MBBS, MD (Medicine)",
-      exp: "32+ वर्ष अनुभव",
-      room: "ओपीडी कक्ष सं. 101",
-      timings: "सोमवार - शनिवार (प्रातः 9:00 - दोपहर 2:00)",
+      specialty: "Physician & General Medicine Doctor in Alwar",
+      desc: "सामान्य बीमारियों, Fever, Cough और अन्य स्वास्थ्य समस्याओं के लिए Doctor से Consultation लें।",
+      qualification: "MBBS, MD (Medicine)",
+      room: "101",
+      timings: "Monday to Saturday, 9 AM to 2 PM",
       image: "/doctor_5.jpg",
       objectPosition: "center 20%"
     },
     {
       id: 6,
-      name: "डॉ. ओ. पी. यादव",
+      initial: 'O',
+      name: "Dr. O. P. Yadav",
       category: "ortho",
-      specialty: "वरिष्ठ हड्डी एवं जोड़ रोग विशेषज्ञ",
-      degree: "MBBS, MS (Orthopaedics)",
-      exp: "30+ वर्ष अनुभव",
-      room: "ओपीडी कक्ष सं. 106",
-      timings: "सोमवार - शनिवार (प्रातः 10:00 - दोपहर 2:00)",
+      specialty: "Orthopaedic Doctor in Alwar",
+      desc: "हड्डियों, जोड़ों और घुटनों के दर्द तथा चलने-फिरने में परेशानी के लिए Consultation लें।",
+      qualification: "MBBS, MS (Orthopaedics)",
+      room: "106",
+      timings: "Monday to Saturday, 10 AM to 2 PM",
       image: "/doctor_6.jpg",
       objectPosition: "center 20%"
     },
     {
       id: 7,
-      name: "डॉ. एस. एन. शर्मा",
+      initial: 'S',
+      name: "Dr. S. N. Sharma",
       category: "pediatrics",
-      specialty: "वरिष्ठ शिशु एवं बाल रोग विशेषज्ञ",
-      degree: "MBBS, MD (Pediatrics), DCH",
-      exp: "35+ वर्ष अनुभव",
-      room: "ओपीडी कक्ष सं. 107",
-      timings: "प्रतिदिन (प्रातः 9:00 - दोपहर 1:00 एवं सायं 4:00 - 6:00)",
+      specialty: "Pediatrician (Child Specialist) in Alwar",
+      desc: "बच्चों के स्वास्थ्य, सामान्य बीमारियों और Pediatrics संबंधी समस्याओं के लिए Doctor से सलाह लें।",
+      qualification: "MBBS, MD (Pediatrics), DCH",
+      room: "107",
+      timings: "Daily, 9 AM to 1 PM and 4 PM to 6 PM",
       image: "/doctor_7.jpg",
       objectPosition: "center 20%"
     }
@@ -118,19 +121,20 @@ export default function Doctors({ onOpenAppointment }) {
   return (
     <section id="doctors" className="doctors-section section-padding">
       <div className="container">
+        
         {/* Section Header */}
         <div className="text-center center-block">
           <span className="section-tag">
             <FaStethoscope size={13} style={{ marginRight: '6px' }} />
-            चिकित्सा विशेषज्ञ मंडल
+            OUR SPECIALIST DOCTORS
           </span>
-          <h2 className="section-title">हमारे वरिष्ठ विशेषज्ञ चिकित्सक</h2>
+          <h2 className="section-title">Our Senior Specialist Doctors</h2>
           <p className="section-desc center-block">
-            संत सुखदेव शाह धर्मार्थ चिकित्सालय में विभिन्न सुपर-स्पेशलिटी क्षेत्रों के अनुभवी, समर्पित व वरिष्ठ चिकित्सकों द्वारा नियमित ओपीडी परामर्श उपलब्ध है।
+            Sant Sukhdev Shah Charitable Hospital में अनुभवी Specialist Doctors से Consultation प्राप्त करें। मरीजों की जरूरत के अनुसार विभिन्न Departmentों में OPD Consultation की सुविधा उपलब्ध है।
           </p>
         </div>
 
-        {/* Filter Pills */}
+        {/* Category Filter */}
         <div className="doc-filter-bar">
           {categories.map(cat => (
             <button
@@ -158,16 +162,15 @@ export default function Doctors({ onOpenAppointment }) {
                   style={{ objectPosition: doc.objectPosition }}
                 />
                 
+                {/* Initial Badge */}
+                <div className="doc-initial-avatar">
+                  {doc.initial}
+                </div>
+
                 {/* Status Badge */}
                 <div className="doc-badge-status">
                   <span className="status-dot"></span>
-                  <span>ओपीडी परामर्श उपलब्ध</span>
-                </div>
-
-                {/* Experience Badge */}
-                <div className="doc-badge-exp">
-                  <FaAward size={13} />
-                  <span>{doc.exp}</span>
+                  <span>OPD Consultation</span>
                 </div>
               </div>
 
@@ -176,20 +179,23 @@ export default function Doctors({ onOpenAppointment }) {
                 <div className="doc-header-info">
                   <h3 className="doc-name">{doc.name}</h3>
                   <span className="doc-specialty">{doc.specialty}</span>
-                  <span className="doc-degree">{doc.degree}</span>
+                  {doc.desc && <p className="doc-desc-blurb">{doc.desc}</p>}
+                  <div className="doc-qualification-line">
+                    <strong>Qualification:</strong> {doc.qualification}
+                  </div>
                 </div>
 
                 <div className="doc-meta-row">
                   <span className="doc-room-tag">
                     <FaDoorOpen size={12} />
-                    <span>{doc.room}</span>
+                    <span>OPD Room: {doc.room}</span>
                   </span>
                 </div>
 
                 <div className="doc-timing-box">
                   <div className="timing-label">
                     <FaClock size={11} />
-                    <span>ओपीडी समय:</span>
+                    <span>OPD Timing:</span>
                   </div>
                   <div className="timing-value">{doc.timings}</div>
                 </div>
@@ -200,7 +206,7 @@ export default function Doctors({ onOpenAppointment }) {
                   onClick={() => onOpenAppointment && onOpenAppointment(`${doc.name} - ${doc.specialty}`)}
                 >
                   <FaCalendarCheck size={14} />
-                  <span>परामर्श बुक करें</span>
+                  <span>Book Appointment</span>
                 </button>
               </div>
             </div>
@@ -253,15 +259,41 @@ export default function Doctors({ onOpenAppointment }) {
           )}
         </div>
 
-        {/* Bottom Hospital Trust Note */}
-        <div className="doctors-bottom-note">
-          <div className="note-pill">
-            <FaShieldHeart size={15} />
-            <span>
-              संत सुखदेव शाह धर्मार्थ चिकित्सालय में सभी चिकित्सक सेवा-भाव एवं समर्पण के साथ समर्पित स्वास्थ्य परामर्श प्रदान करते हैं।
-            </span>
+        {/* Consult the Best Doctor in Alwar (Bottom Box from Page 5) */}
+        <div className="consult-best-box">
+          <h3 className="consult-best-title">Consult the Best Doctor in Alwar</h3>
+          <p className="consult-best-desc">
+            Sant Sukhdev Shah Charitable Hospital, Alwar में अनुभवी Doctors से स्वास्थ्य संबंधी सलाह लें। यहाँ Physician, Orthopaedics Specialist और बच्चों के Doctor उपलब्ध हैं। अपनी परेशानी के अनुसार Doctor चुनें, OPD का समय देखें और आसानी से ऑनलाइन Book Appointment।
+          </p>
+        </div>
+
+        {/* Book Doctor Appointment Online (From Page 6 top) */}
+        <div className="book-appointment-online-banner">
+          <div className="book-online-content">
+            <h3 className="book-online-title">Book Doctor Appointment Online</h3>
+            <p className="book-online-p1">
+              क्या आप Alwar में Doctor से Consultation लेना चाहते हैं? अपनी जरूरत के अनुसार Specialist Doctor चुनें और ऑनलाइन Book Appointment। सहायता के लिए <strong>8890199768</strong> पर संपर्क करें।
+            </p>
+            <p className="book-online-p2">
+              Sant Sukhdev Shah Charitable Hospital, Alwar में मरीजों को उनकी स्वास्थ्य संबंधी जरूरतों के अनुसार Doctor से Consultation लेने में सहायता दी जाती है।
+            </p>
+          </div>
+          <div className="book-online-actions">
+            <button 
+              type="button" 
+              className="btn btn-primary"
+              onClick={() => onOpenAppointment && onOpenAppointment('Doctor Consultation')}
+            >
+              <FaCalendarCheck size={15} />
+              <span>Book Appointment Online</span>
+            </button>
+            <a href="tel:8890199768" className="btn btn-outline">
+              <FaPhoneVolume size={14} />
+              <span>कॉल 8890199768</span>
+            </a>
           </div>
         </div>
+
       </div>
     </section>
   );

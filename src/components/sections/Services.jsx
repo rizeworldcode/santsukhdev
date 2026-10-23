@@ -19,64 +19,64 @@ export default function Services({ onOpenAppointment }) {
     {
       id: 'ct-scan',
       nameEn: 'CT Scan',
-      nameHi: 'कंप्यूटेड टोमोग्राफी स्कैन',
-      desc: 'मस्तिष्क, छाती, पेट एवं जोड़ों का आधुनिक मल्टी-स्लाइस 3D सीटी स्कैन।',
+      nameHi: 'Computed Tomography Scan',
+      desc: 'CT Scan शरीर के अंदरूनी हिस्सों की विस्तृत तस्वीरें तैयार करने वाली एक आधुनिक Test है। Doctor की सलाह के अनुसार इसका उपयोग सिर, छाती, पेट और शरीर के अन्य हिस्सों की Test के लिए किया जा सकता है।',
       image: '/ct_scan_thumb.jpg',
       badge: '24/7 सेवा'
     },
     {
       id: 'hrct',
       nameEn: 'HRCT',
-      nameHi: 'हाई-रेजोल्यूशन चेस्ट सीटी',
-      desc: 'फेफड़ों के संक्रमण, निमोनिया व सांस संबंधी बीमारियों की अति-सटीक जांच।',
+      nameHi: 'High-Resolution CT Scan',
+      desc: 'HRCT एक विशेष प्रकार की CT Test है, जिसका उपयोग मुख्य रूप से Lungs और छाती से जुड़ी समस्याओं का अधिक विस्तार से मूल्यांकन करने के लिए किया जाता है। यह Test Doctor की सलाह के अनुसार की जाती है।',
       image: '/hrct_thumb.jpg',
       badge: 'एचडी इमेजिंग'
     },
     {
       id: 'doppler',
       nameEn: 'Doppler',
-      nameHi: 'कलर डॉपलर व वैस्कुलर जांच',
-      desc: 'धमनियों व नसों में रक्त प्रवाह एवं कार्डियो-वैस्कुलर स्थिति का परीक्षण।',
+      nameHi: 'Color Doppler & Vascular Test',
+      desc: 'Doppler Test की मदद से शरीर की Blood Vessels में Blood Flow का मूल्यांकन किया जा सकता है। Doctor आवश्यकता के अनुसार नसों और धमनियों से जुड़ी समस्याओं की Test के लिए इसकी सलाह दे सकते हैं।',
       image: '/doppler_thumb.jpg',
       badge: 'कलर मैपिंग'
     },
     {
       id: 'ncct',
       nameEn: 'NCCT',
-      nameHi: 'नॉन-कंट्रास्ट सीटी स्कैन',
-      desc: 'सिर में चोट, स्ट्रोक, आंतरिक रक्तस्राव एवं किडनी स्टोन का त्वरित निदान।',
+      nameHi: 'Non-Contrast CT Scan',
+      desc: 'NCCT एक ऐसी CT Test है जिसमें Contrast Dye का उपयोग नहीं किया जाता। Doctor की सलाह के अनुसार इसका उपयोग सिर, छाती, पेट या शरीर के अन्य हिस्सों की Test के लिए किया जा सकता है।',
       image: '/ncct_thumb.jpg',
       badge: 'त्वरित रिपोर्ट'
     },
     {
       id: 'mri',
-      nameEn: 'MRI',
-      nameHi: 'मैग्नेटिक रेजोनेंस इमेजिंग',
-      desc: 'मस्तिष्क, रीढ़ (Spine), जोड़ों व लिगामेंट्स का हाई-डेफिनिशन एमआरआई।',
+      nameEn: 'MRI Scan',
+      nameHi: 'Detailed Internal Body Scan',
+      desc: 'MRI की मदद से शरीर के अंदर की तस्वीरें लेकर बीमारी का पता लगाने में मदद मिलती है। यह Test दिमाग, Spine, नसों और शरीर के अन्य हिस्सों की समस्याओं को समझने के लिए की जाती है।',
       image: '/mri_thumb.jpg',
       badge: 'एडवांस्ड एमआरआई'
     },
     {
       id: 'ultrasound',
-      nameEn: 'UltraSound',
-      nameHi: 'सोनोग्राफी / 4D अल्ट्रासाउंड',
-      desc: 'संपूर्ण पेट, पेल्विस, गर्भावस्था भ्रूण विकास व थायरॉइड की डिजिटल सोनोग्राफी।',
+      nameEn: 'Ultrasound',
+      nameHi: 'Easy Internal Body Scan',
+      desc: 'Ultrasound की मदद से पेट, Liver, Kidney और शरीर के दूसरे अंगों की Test की जाती है। Pregnancy के दौरान बच्चे के विकास और स्वास्थ्य की जानकारी लेने के लिए भी यह Test उपयोगी होती है।',
       image: '/ultrasound_thumb.jpg',
-      badge: 'डिजिटल 4D'
+      badge: 'डिजिटल सोनोग्राफी'
     },
     {
       id: 'pathlab',
-      nameEn: 'PathLab Tests',
-      nameHi: 'पैथोलॉजी एवं रक्त जांच',
-      desc: 'सीबीसी, एलएफटी, केएफटी, लिपिड, थायरॉइड, शुगर व सभी हार्मोनल प्रोफाइल।',
+      nameEn: 'Pathology Lab Tests',
+      nameHi: 'Blood Test & Pathology Lab Tests',
+      desc: 'Blood Test और अन्य Lab Test से शरीर में होने वाली समस्याओं का पता लगाने में मदद मिलती है। यहाँ उपलब्ध Pathology Test के माध्यम से Doctor को बीमारी समझने और आगे के Treatment की योजना बनाने में सहायता मिलती है।',
       image: '/pathlab_thumb.jpg',
       badge: 'ऑटोमेटेड लैब'
     },
     {
       id: 'other-tests',
       nameEn: 'Other Tests',
-      nameHi: 'अन्य विशेष डायग्नोस्टिक्स',
-      desc: 'डिजिटल एक्स-रे, ईसीजी, टीएमटी, ईईजी व अन्य विशेष नैदानिक परीक्षण।',
+      nameHi: 'X-Ray, ECG, TMT, EEG & More',
+      desc: 'Hospital में विभिन्न प्रकार की Test की सुविधा उपलब्ध है। इसमें Digital X-Ray, ECG, TMT, EEG और अन्य विशेष Test शामिल हैं। अपनी जरूरत के अनुसार उपलब्ध Test और उनकी जानकारी के लिए Hospital से संपर्क करें।',
       image: '/other_tests_thumb.jpg',
       badge: 'संपूर्ण चेकअप'
     }
@@ -100,7 +100,7 @@ export default function Services({ onOpenAppointment }) {
 
   const handleBookHomeCollection = () => {
     if (onOpenAppointment) {
-      onOpenAppointment('Home Collection Facility (घर से सैंपल पिकअप - ₹50)');
+      onOpenAppointment('Home Collection Facility (घर से सैंपल पिकअप - ₹50 Extra)');
     }
   };
 
@@ -112,11 +112,11 @@ export default function Services({ onOpenAppointment }) {
         <div className="services-header-row">
           <div className="services-title-col">
             <span className="services-badge">
-              जांच एवं डायग्नोस्टिक सुविधाएं • LAB TEST INVESTIGATION BOOKING
+              DIAGNOSTIC & TEST FACILITIES
             </span>
             <h2 className="services-main-title">Lab Test Investigation Booking</h2>
             <p className="services-subtitle">
-              संत सुखदेव धर्मार्थ चिकित्सालय में आधुनिक डिजिटल सीटी स्कैन, एमआरआई, अल्ट्रासाउंड व अत्याधुनिक पैथोलॉजी जांच की 24 घंटे रियायती सेवा।
+              Sant Sukhdev Shah Charitable Hospital, Alwar में मरीजों की Test संबंधी जरूरतों के लिए विभिन्न Diagnostic सुविधाओं की जानकारी और बुकिंग की सुविधा उपलब्ध कराने का उद्देश्य है। यहाँ CT Scan, HRCT, Doppler और NCCT जैसी Testों के बारे में जानकारी प्राप्त कर सकते हैं। सही Test से Doctors को मरीज की स्थिति समझने और आगे के Treatment के बारे में निर्णय लेने में सहायता मिलती है। अपनी जरूरत के अनुसार Test चुनें और बुकिंग या उपलब्धता की पुष्टि के लिए Hospital से संपर्क करें।
             </p>
           </div>
 
@@ -154,7 +154,7 @@ export default function Services({ onOpenAppointment }) {
                 key={test.id} 
                 className="investigation-card"
                 onClick={() => handleBookTest(test)}
-                title={`${test.nameEn} - जांच बुक करें`}
+                title={`${test.nameEn} - Book Test`}
               >
                 <div className="investigation-img-wrap">
                   <img 
@@ -181,8 +181,7 @@ export default function Services({ onOpenAppointment }) {
                       handleBookTest(test);
                     }}
                   >
-                    <span>जांच बुक करें</span>
-                    <FaArrowRight size={13} className="action-arrow" />
+                    <span>Book Test →</span>
                   </button>
                 </div>
               </div>
@@ -220,17 +219,28 @@ export default function Services({ onOpenAppointment }) {
               </div>
             </div>
 
-            {/* Right Card: Plaque with text & button from image */}
+            {/* Right Card: Plaque with text & button from PDF */}
             <div className="home-collection-card">
               <div className="collection-card-inner">
-                <div className="collection-kicker">घर बैठे सैंपल कलेक्शन सुविधा</div>
-                <h3 className="collection-heading">HOME COLLECTION FACILITY*</h3>
-                <p className="collection-note">
-                  Home collection facility available for <strong>PathLab tests only</strong>
+                <div className="collection-kicker">🏠 Home Sample Collection Facility</div>
+                <h3 className="collection-heading">अब Pathology Test के लिए घर से Hospital आने की जरूरत नहीं।</h3>
+                <p className="collection-desc-hi">
+                  अगर आप बुजुर्ग हैं, घर से बाहर जाने में परेशानी होती है या किसी कारण Hospital नहीं आ सकते, तो आपके लिए घर से ब्लड Sample Collection की सुविधा उपलब्ध है।
                 </p>
                 <p className="collection-desc-hi">
-                  बुजुर्ग, अस्वस्थ या व्यस्त मरीजों के लिए प्रशिक्षित लैब तकनीशियन द्वारा आपके घर से सुरक्षित रक्त एवं मूत्र सैंपल एकत्र करने की विशेष सुविधा।
+                  हमारा प्रशिक्षित स्टाफ आपके घर आकर सुरक्षित तरीके से सैंपल कलेक्ट करने में मदद करता है। इससे आप घर बैठे आसानी से अपनी Pathology Test करवा सकते हैं।
                 </p>
+
+                <div className="collection-charge-banner">
+                  <div className="charge-details">
+                    <span className="charge-caption">Home Collection Charges</span>
+                    <strong className="charge-amount">₹50 Extra</strong>
+                  </div>
+                  <div className="charge-contact">
+                    <span className="charge-caption">Contact:</span>
+                    <a href="tel:8890199768" className="charge-phone">8890199768</a>
+                  </div>
+                </div>
 
                 <div className="collection-actions-row">
                   <button 
@@ -239,21 +249,21 @@ export default function Services({ onOpenAppointment }) {
                     onClick={handleBookHomeCollection}
                   >
                     <FaCalendarCheck size={16} />
-                    <span>Add Home Collection (₹50)</span>
+                    <span>Book Home Collection (₹50)</span>
                   </button>
 
                   <a 
-                    href={`tel:${hospitalInfo.emergencyPhone}`} 
+                    href="tel:8890199768" 
                     className="btn-collection-call"
                     title="कॉल करके बुक करें"
                   >
                     <FaPhone size={14} />
-                    <span>कॉल करें: {hospitalInfo.emergencyPhone}</span>
+                    <span>कॉल: 8890199768</span>
                   </a>
                 </div>
 
                 <div className="collection-disclaimer">
-                  *applicable only within <strong>4 km</strong> from the Hospital (अस्पताल परिसर से 4 किमी के दायरे में मान्य)
+                  <strong>Note:</strong> घर से Sample Collection की सुविधा केवल Pathology Test के लिए उपलब्ध है। यह सुविधा Hospital से 4 किलोमीटर के दायरे में लागू है।
                 </div>
               </div>
             </div>
@@ -261,7 +271,7 @@ export default function Services({ onOpenAppointment }) {
           </div>
         </div>
 
-        {/* Bottom Trust & Security Banner (Safe, Secure, Seamless) */}
+        {/* Bottom Trust & Security Banner (Safe, Secure, Seamless from PDF) */}
         <div className="services-trust-banner">
           <div className="trust-grid">
             
@@ -271,9 +281,10 @@ export default function Services({ onOpenAppointment }) {
                 <FaMaskFace size={28} />
               </div>
               <div className="trust-text-wrap">
-                <h4 className="trust-title">SAFE</h4>
+                <div className="trust-top-sub">SAFE</div>
+                <h4 className="trust-title">Safe Tests</h4>
                 <p className="trust-desc">
-                  100% स्टेराइल डिस्पोजेबल उपकरण एवं उच्चतम मेडिकल सुरक्षा मानक।
+                  Safe Test उपकरणों और बेहतर मेडिकल सुरक्षा मानकों के साथ मरीजों की देखभाल का ध्यान।
                 </p>
               </div>
             </div>
@@ -284,9 +295,10 @@ export default function Services({ onOpenAppointment }) {
                 <FaShieldHalved size={28} />
               </div>
               <div className="trust-text-wrap">
-                <h4 className="trust-title">SECURE</h4>
+                <div className="trust-top-sub">SECURE</div>
+                <h4 className="trust-title">Secure & Confidential</h4>
                 <p className="trust-desc">
-                  सटीक कंप्यूटराइज्ड लैब रिपोर्ट एवं पूर्णतः गोपनीय डिजिटल रिकॉर्ड्स।
+                  Test की सटीक जानकारी, Digital Report और मरीजों की जानकारी की गोपनीयता का ध्यान।
                 </p>
               </div>
             </div>
@@ -297,9 +309,10 @@ export default function Services({ onOpenAppointment }) {
                 <FaHeartPulse size={28} />
               </div>
               <div className="trust-text-wrap">
-                <h4 className="trust-title">SEAMLESS</h4>
+                <div className="trust-top-sub">SEAMLESS</div>
+                <h4 className="trust-title">Easy & Convenient Service</h4>
                 <p className="trust-desc">
-                  सरल ऑनलाइन बुकिंग, त्वरित सैंपल कलेक्शन एवं उसी दिन त्वरित रिपोर्ट।
+                  आसान Online Booking, घर से Sample Collection और Test रिपोर्ट पाने की सुविधाजनक प्रक्रिया।
                 </p>
               </div>
             </div>

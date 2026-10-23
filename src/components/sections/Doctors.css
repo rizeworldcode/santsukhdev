@@ -144,6 +144,24 @@
   color: #f59e0b;
 }
 
+.doc-initial-avatar {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0a65cc 0%, #1789eb 100%);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(10, 101, 204, 0.4);
+  border: 2px solid #ffffff;
+}
+
 /* Doctor Info Container */
 .doc-info {
   padding: 1.3rem 1.25rem 1.35rem;
@@ -169,15 +187,25 @@
   font-size: 0.86rem;
   font-weight: 600;
   color: #0a65cc;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.35rem;
   line-height: 1.3;
 }
 
-.doc-degree {
-  display: block;
+.doc-desc-blurb {
+  font-size: 0.8rem;
+  color: #475569;
+  line-height: 1.45;
+  margin: 0 0 0.45rem;
+  background: #f8fafc;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border-left: 2px solid #0a65cc;
+}
+
+.doc-qualification-line {
   font-size: 0.77rem;
   color: #64748b;
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 /* Meta Row */
@@ -389,30 +417,92 @@
   color: #ffffff;
 }
 
-/* Bottom Trust Note */
-.doctors-bottom-note {
-  margin-top: 2.5rem;
-  display: flex;
-  justify-content: center;
+/* Consult the Best Doctor in Alwar */
+.consult-best-box {
+  margin-top: 3rem;
+  background: #f0f7ff;
+  border: 1px solid #bae6fd;
+  border-radius: 18px;
+  padding: 1.5rem 2rem;
+  text-align: center;
 }
 
-.note-pill {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 999px;
-  padding: 0.65rem 1.6rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.86rem;
-  font-weight: 600;
+.consult-best-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0c1524;
+  margin: 0 0 0.5rem;
+  font-family: var(--font-heading);
+}
+
+.consult-best-desc {
+  font-size: 0.95rem;
   color: #334155;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
-.note-pill svg {
-  color: #0a65cc;
+/* Book Doctor Appointment Online Banner */
+.book-appointment-online-banner {
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg, #0c1524 0%, #1e3a5f 100%);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: 0 12px 32px rgba(12, 21, 36, 0.16);
+}
+
+.book-online-content {
+  flex: 1;
+}
+
+.book-online-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+  font-family: var(--font-heading);
+}
+
+.book-online-p1 {
+  font-size: 0.96rem;
+  color: #e2e8f0;
+  line-height: 1.6;
+  margin: 0 0 0.4rem;
+}
+
+.book-online-p2 {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.book-online-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
   flex-shrink: 0;
+}
+
+.book-online-actions .btn {
+  white-space: nowrap;
+}
+
+.book-online-actions .btn-outline {
+  background: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.book-online-actions .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
 }
 
 /* Responsive Breakpoints */

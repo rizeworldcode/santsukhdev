@@ -30,117 +30,117 @@ export default function Departments({ onOpenAppointment }) {
   const departments = [
     {
       id: 'general-medicine',
-      nameEn: 'General Medicine',
-      nameHi: 'सामान्य चिकित्सा',
-      desc: 'बुखार, संक्रमण, मधुमेह, उच्च रक्तचाप एवं सामान्य मौसमी बीमारियों का संपूर्ण उपचार।',
+      nameEn: 'सामान्य चिकित्सा',
+      nameHi: 'General Medicine / General Physician',
+      desc: 'बुखार, खांसी, संक्रमण, मधुमेह (शुगर), रक्तचाप (बीपी) एवं अन्य सामान्य मौसमी बीमारियों की संपूर्ण जांच व उपचार हेतु विशेषज्ञ परामर्श लें।',
       icon: FaPills,
       image: '/gallery/s 4.jpg',
       angle: 'right'
     },
     {
       id: 'eye-care',
-      nameEn: 'Eye Care',
-      nameHi: 'नेत्र रोग विभाग',
-      desc: 'आधुनिक दृष्टि जांच, मोतियाबिंद, ग्लूकोमा व आंखों की संपूर्ण देखभाल व परामर्श।',
+      nameEn: 'नेत्र रोग विभाग',
+      nameHi: 'Eye Care / Ophthalmology',
+      desc: 'आँखों में परेशानी, धुंधला दिखाई देना, मोतियाबिंद (Cataract) एवं आँखों से जुड़ी अन्य सभी समस्याओं के लिए आधुनिक जांच व नेत्र विशेषज्ञ से सलाह उपलब्ध है।',
       icon: FaEye,
       image: '/gallery/s 10.JPG',
       angle: 'left'
     },
     {
       id: 'urology',
-      nameEn: 'Urology',
-      nameHi: 'मूत्र एवं गुर्दा रोग',
-      desc: 'किडनी स्टोन, प्रोस्टेट, मूत्र मार्ग संक्रमण व गुर्दे संबंधी समस्याओं का सटीक निदान।',
+      nameEn: 'मूत्र एवं गुर्दा रोग',
+      nameHi: 'Urology & Kidney Care',
+      desc: 'गुर्दे की पथरी (Kidney Stone), पेशाब में रुकावट या जलन, प्रोस्टेट एवं मूत्र मार्ग से जुड़ी सभी समस्याओं के लिए अनुभवी विशेषज्ञ से परामर्श लें।',
       icon: GiKidneys,
       image: '/ultrasound_thumb.jpg',
       angle: 'right'
     },
     {
       id: 'cardiology',
-      nameEn: 'Cardiology',
-      nameHi: 'हृदय रोग विभाग',
-      desc: 'ईसीजी, ईकोकार्डियोग्राफी, बीपी नियंत्रण एवं हृदय रोगों का विशेषज्ञ परामर्श।',
+      nameEn: 'हृदय रोग विभाग',
+      nameHi: 'Cardiology / Heart Care',
+      desc: 'हृदय रोग, सीने में दर्द, घबराहट, बीपी नियंत्रण एवं दिल के संपूर्ण स्वास्थ्य के लिए वरिष्ठ हृदय रोग विशेषज्ञ परामर्श की सुविधा उपलब्ध है।',
       icon: FaHeartPulse,
       image: '/doppler_thumb.jpg',
       angle: 'left'
     },
     {
       id: 'ent',
-      nameEn: 'Ears, Nose & Throat',
-      nameHi: 'कान, नाक एवं गला (ENT)',
-      desc: 'साइनस, टॉन्सिल, एलर्जी, सुनने की कमजोरी व गले के संक्रमण का प्रभावी उपचार।',
+      nameEn: 'कान, नाक एवं गला रोग',
+      nameHi: 'Ears, Nose & Throat (ENT)',
+      desc: 'कान में दर्द, कम सुनाई देना, नाक बंद होना, साइनस, टॉन्सिल एवं गले के संक्रमण की आधुनिक जांच व प्रभावी उपचार हेतु परामर्श लें।',
       icon: TbEar,
       image: '/other_tests_thumb.jpg',
       angle: 'right'
     },
     {
       id: 'gynaecology',
-      nameEn: 'Gynaecology & Obstetrics',
-      nameHi: 'प्रसूति एवं स्त्री रोग',
-      desc: 'सुरक्षित मातृत्व, सामान्य व सिजेरियन प्रसव, इनफर्टिलिटी व महिला स्वास्थ्य क्लिनिक।',
+      nameEn: 'प्रसूति एवं स्त्री रोग',
+      nameHi: 'Gynaecology & Obstetrics',
+      desc: 'महिलाओं की स्वास्थ्य समस्याएं, माहवारी विकार, सुरक्षित मातृत्व, सामान्य व सिजेरियन प्रसव एवं महिला स्वास्थ्य क्लिनिक की संपूर्ण देखभाल।',
       icon: MdPregnantWoman,
       image: '/D 1.jpeg',
       angle: 'left'
     },
     {
       id: 'pediatrics',
-      nameEn: 'Pediatrics',
-      nameHi: 'शिशु एवं बाल रोग',
-      desc: 'नवजात शिशु देखभाल, नियमित टीकाकरण, पोषण व बाल विकास विशेष परामर्श।',
+      nameEn: 'शिशु एवं बाल रोग',
+      nameHi: 'Pediatrics / Child Care',
+      desc: 'नवजात शिशुओं एवं बच्चों की सेहत, नियमित टीकाकरण, पोषण व बाल विकास संबंधी सामान्य एवं मौसमी बीमारियों के लिए विशेषज्ञ परामर्श लें।',
       icon: FaBaby,
       image: '/doctor_5.jpg',
       angle: 'right'
     },
     {
       id: 'orthopaedics',
-      nameEn: 'Orthopaedics & Joints',
-      nameHi: 'हड्डी एवं जोड़ रोग',
-      desc: 'जोड़ प्रत्यारोपण (नी/हिप), आर्थराइटिस, जटिल फ्रैक्चर, रीढ़ व कमर दर्द का इलाज।',
+      nameEn: 'हड्डी एवं जोड़ रोग',
+      nameHi: 'Orthopaedics & Joint Care',
+      desc: 'हड्डियों में दर्द, जटिल फ्रैक्चर, घुटनों की तकलीफ, जोड़ों के दर्द, गठिया (Arthritis) एवं रीढ़ की समस्याओं की सटीक जांच व संपूर्ण उपचार उपलब्ध है।',
       icon: GiJoint,
       image: '/doctor_4.jpg',
       angle: 'left'
     },
     {
       id: 'surgery',
-      nameEn: 'Surgery',
-      nameHi: 'शल्य चिकित्सा / सर्जरी',
-      desc: 'हर्निया, अपेंडिक्स, पित्ताशय की पथरी व दूरबीन (Laparoscopy) द्वारा सफल सर्जरी।',
+      nameEn: 'शल्य चिकित्सा विभाग',
+      nameHi: 'General & Laparoscopic Surgery',
+      desc: 'हर्निया, अपेंडिक्स, पित्ताशय की पथरी एवं दूरबीन (Laparoscopy) द्वारा आधुनिक व सुरक्षित सफल ऑपरेशन की उत्तम व्यवस्था उपलब्ध है।',
       icon: GiScalpel,
       image: '/D 2.jpeg',
       angle: 'right'
     },
     {
       id: 'dental',
-      nameEn: 'Dental Care',
-      nameHi: 'दंत चिकित्सा विभाग',
-      desc: 'रूट कैनाल (RCT), दांत निकालना, स्केलिंग, सफाई व ओरल हाइजीन उपचार।',
+      nameEn: 'दंत चिकित्सा विभाग',
+      nameHi: 'Dental Care / Dentist',
+      desc: 'दांतों में दर्द, मसूड़ों की परेशानी, रूट कैनाल (RCT), दांत निकलवाने, नए दांत लगाने एवं दाँतों की सफाई संबंधी सभी सेवाओं के लिए संपर्क करें।',
       icon: FaTooth,
       image: '/doctor_6.jpg',
       angle: 'left'
     },
     {
       id: 'homeopathy',
-      nameEn: 'Homeopathy',
-      nameHi: 'होम्योपैथी चिकित्सा',
-      desc: 'पुरानी बीमारियों, चर्म रोग, माइग्रेन व एलर्जी का जड़ से सुरक्षित प्राकृतिक निदान।',
+      nameEn: 'होम्योपैथी चिकित्सा',
+      nameHi: 'Homeopathy Department',
+      desc: 'पुरानी व जटिल बीमारियों, एलर्जी, चर्म रोग एवं माइग्रेन के सुरक्षित, प्राकृतिक व जड़ से उपचार हेतु योग्य चिकित्सक से परामर्श लें।',
       icon: GiPestleMortar,
       image: '/doctor_7.jpg',
       angle: 'right'
     },
     {
       id: 'physiotherapy',
-      nameEn: 'Physiotherapy',
-      nameHi: 'फिजियोथेरेपी एवं पुनर्वास',
-      desc: 'लकवा (Paralysis), स्पोर्ट्स इंजरी, नसों के दर्द व सर्जरी बाद रिहैबिलिटेशन।',
+      nameEn: 'फिजियोथेरेपी एवं पुनर्वास',
+      nameHi: 'Physiotherapy & Rehabilitation',
+      desc: 'मांसपेशियों में दर्द, जोड़ों की जकड़न, लकवा (Paralysis), चोट या ऑपरेशन के बाद रिकवरी और चलने-फिरने में सुधार हेतु आधुनिक फिजियोथेरेपी सुविधा।',
       icon: TbStretching,
       image: '/gallery/s 3.jpg',
       angle: 'left'
     },
     {
       id: 'acupressure',
-      nameEn: 'Acupressure',
-      nameHi: 'एक्यूप्रेशर चिकित्सा',
-      desc: 'पारंपरिक दबाव बिंदुओं द्वारा साइटिका, सर्वाइकल, तनाव व नसों का प्राकृतिक उपचार।',
+      nameEn: 'एक्यूप्रेशर चिकित्सा',
+      nameHi: 'Acupressure Department',
+      desc: 'प्राकृतिक दबाव बिंदुओं द्वारा साइटिका, सर्वाइकल, नसों का दर्द, तनाव व अनिद्रा जैसी समस्याओं के सुरक्षित प्राकृतिक उपचार की सुविधा उपलब्ध है।',
       icon: MdTouchApp,
       image: '/gallery/s 5.jpg',
       angle: 'right'
@@ -154,10 +154,10 @@ export default function Departments({ onOpenAppointment }) {
         {/* Section Header with "Team of Doctors >" button */}
         <div className="dept-section-header">
           <div className="dept-header-left">
-            <span className="dept-badge">उपलब्ध विभाग • AVAILABLE DEPARTMENTS</span>
+            <span className="dept-badge">उपलब्ध चिकित्सा विभाग • MEDICAL DEPARTMENTS</span>
             <h2 className="dept-title">हमारे प्रमुख चिकित्सा विभाग</h2>
             <p className="dept-subtitle">
-              संत सुखदेव चिकित्सालय में अनुभवी सुपर-स्पेशलिस्ट चिकित्सकों और आधुनिक उपकरणों से सुसज्जित 13 विशेषज्ञ विभाग।
+              संत सुखदेव शाह धर्मार्थ चिकित्सालय, अलवर में स्वास्थ्य से जुड़ी विभिन्न समस्याओं के लिए 13 विशेषज्ञ चिकित्सा विभाग संचालित हैं। यहाँ मरीज अपनी आवश्यकतानुसार संबंधित विशेषज्ञ डॉक्टर से परामर्श प्राप्त कर सकते हैं तथा रियायती दरों पर जांच व उपचार की सुविधा का लाभ उठा सकते हैं।
             </p>
           </div>
 

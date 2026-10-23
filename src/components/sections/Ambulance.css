@@ -346,9 +346,40 @@
   letter-spacing: 0.2px;
 }
 
+.amb-subtitle-desc {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.45;
+  margin: 0;
+}
+
 /* Action Buttons */
 .amb-action-row {
   margin-bottom: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.btn-copy-number {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  border-radius: 12px;
+  background: #f1f5f9;
+  color: #0c1524;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-copy-number:hover {
+  background: #e2e8f0;
+  border-color: #94a3b8;
 }
 
 .amb-book-btn {
@@ -388,7 +419,7 @@
 /* Disclaimer text */
 .amb-disclaimer {
   text-align: right;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   color: #64748b;
   font-style: italic;
   display: flex;
@@ -400,6 +431,72 @@
 .disclaimer-en {
   font-weight: 600;
   color: #475569;
+}
+
+/* Contact for Ambulance Booking Table Card */
+.ambulance-contact-table-card {
+  margin-top: 2.5rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 1.8rem 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.contact-table-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0c1524;
+  margin: 0 0 1.25rem;
+  font-family: var(--font-heading);
+}
+
+.amb-table-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+  background: #f8fafc;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.amb-table-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.amb-table-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.amb-table-val {
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.amb-table-val a {
+  color: #0a65cc;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.amb-table-val a:hover {
+  text-decoration: underline;
+}
+
+.amb-table-instruction {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+  font-style: italic;
 }
 
 /* 24x7 Emergency Contact Strip */

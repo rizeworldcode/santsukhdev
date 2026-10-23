@@ -9,12 +9,12 @@ import {
   FaHospital
 } from 'react-icons/fa6';
 
-// 9 Original Hospital Photos from public/gallery/
+// 11 Original Hospital Photos from public/gallery/ categorized according to PDF Page 6
 const bentoGalleryItems = [
   {
     id: 1,
     title: "क्रिटिकल केयर एम्बुलेंस वाहन",
-    category: "24x7 एम्बुलेंस",
+    category: "Ambulance",
     src: "/gallery/s 8.jpg",
     desc: "संत सुखदेव शाह धर्मार्थ चिकित्सालय की 24 घंटे आपातकालीन एम्बुलेंस सेवा",
     bentoClass: "bento-hero-large" // 2 cols x 2 rows
@@ -22,7 +22,7 @@ const bentoGalleryItems = [
   {
     id: 2,
     title: "आईसीयू एवं क्रिटिकल केयर वार्ड",
-    category: "क्रिटिकल केयर",
+    category: "ICU",
     src: "/gallery/s 2.jpg",
     desc: "मल्टी-पैरा मॉनिटर, आधुनिक आईसीयू बेड्स एवं 24 घंटे जीवन रक्षक व्यवस्था",
     bentoClass: "bento-wide-top" // 2 cols x 1 row
@@ -30,7 +30,7 @@ const bentoGalleryItems = [
   {
     id: 3,
     title: "अत्याधुनिक आईसीयू बेड सेटअप",
-    category: "आईसीयू सेटअप",
+    category: "ICU",
     src: "/gallery/s 3.jpg",
     desc: "सेंट्रल ऑक्सीजन सप्लाई एवं मॉनिटरिंग सिस्टम से सुसज्जित गहन चिकित्सा कक्ष",
     bentoClass: "bento-square-1" // 1 col x 1 row
@@ -38,7 +38,7 @@ const bentoGalleryItems = [
   {
     id: 4,
     title: "इनडोर जनरल वार्ड एवं डे केयर",
-    category: "इनडोर वार्ड",
+    category: "Hospital Campus",
     src: "/gallery/s 4.jpg",
     desc: "विशाल, स्वच्छ एवं वातानुकूलित इनडोर रोगी उपचार हॉल",
     bentoClass: "bento-square-2" // 1 col x 1 row
@@ -46,7 +46,7 @@ const bentoGalleryItems = [
   {
     id: 5,
     title: "ऑटो केराटो-रिफ्रैक्टोमीटर नेत्र उपकरण",
-    category: "आधुनिक उपकरण",
+    category: "Medical Facilities",
     src: "/gallery/s 11.JPG",
     desc: "सटीक चश्मे के नंबर व कॉर्निया जांच हेतु Matronix QK30+ कम्प्यूटरीकृत मशीन",
     bentoClass: "bento-tall" // 1 col x 2 rows
@@ -54,7 +54,7 @@ const bentoGalleryItems = [
   {
     id: 6,
     title: "धर्मार्थ फार्मेसी एवं दवा वितरण",
-    category: "धर्मार्थ फार्मेसी",
+    category: "Hospital Campus",
     src: "/gallery/s 6.jpg",
     desc: "अस्पताल फार्मेसी काउंटर जहां न्यूनतम धर्मार्थ दरों पर गुणवत्तापूर्ण दवाइयां उपलब्ध हैं",
     bentoClass: "bento-wide-mid" // 2 cols x 1 row
@@ -62,7 +62,7 @@ const bentoGalleryItems = [
   {
     id: 7,
     title: "कम्प्यूटरीकृत फार्मेसी एवं बिलिंग काउंटर",
-    category: "डिजिटल काउंटर",
+    category: "Hospital Campus",
     src: "/gallery/s 7.jpg",
     desc: "समर्पित महिला स्टाफ द्वारा कम्प्यूटरीकृत दवा वितरण व बिलिंग सेवा",
     bentoClass: "bento-square-3" // 1 col x 1 row
@@ -70,7 +70,7 @@ const bentoGalleryItems = [
   {
     id: 8,
     title: "ओपीडी एवं पंजीकरण काउंटर",
-    category: "ओपीडी व पंजीकरण",
+    category: "OPD",
     src: "/gallery/s 1.avif",
     desc: "अस्पताल में प्रातःकालीन ओपीडी पर्ची व पंजीकरण हेतु मरीजों व परिजनों की कतार",
     bentoClass: "bento-wide-bottom" // 2 cols x 1 row
@@ -78,7 +78,7 @@ const bentoGalleryItems = [
   {
     id: 9,
     title: "एम्बुलेंस लाइफ सपोर्ट इंटीरियर",
-    category: "लाइफ सपोर्ट",
+    category: "Ambulance",
     src: "/gallery/s 9.jpg",
     desc: "वेंटिलेटर, ऑक्सीजन सिलेंडर, स्पाइन बोर्ड व आपातकालीन स्ट्रेचर युक्त इंटीरियर",
     bentoClass: "bento-square-4" // 1 col x 1 row
@@ -86,7 +86,7 @@ const bentoGalleryItems = [
   {
     id: 10,
     title: "नेत्र रोग जांच एवं स्लिट लैंप परामर्श",
-    category: "नेत्र चिकित्सा",
+    category: "Medical Facilities",
     src: "/gallery/s 10.JPG",
     desc: "वरिष्ठ नेत्र रोग विशेषज्ञ द्वारा आधुनिक स्लिट लैंप माइक्रोस्कोप द्वारा आंखों की सूक्ष्म जांच",
     bentoClass: "bento-wide-eye-1" // 2 cols x 1 row
@@ -94,15 +94,29 @@ const bentoGalleryItems = [
   {
     id: 11,
     title: "रोगी उपचार एवं इनडोर सेवाएं",
-    category: "मरीज देखभाल",
+    category: "Medical Facilities",
     src: "/gallery/s 5.jpg",
     desc: "नर्सिंग स्टाफ की देखरेख में मरीजों को ड्रिप, इंजेक्शन एवं समर्पित देखभाल",
     bentoClass: "bento-wide-eye-2" // 2 cols x 1 row
   }
 ];
 
+const galleryFilterCategories = [
+  'All',
+  'Hospital Campus',
+  'OPD',
+  'ICU',
+  'Ambulance',
+  'Medical Facilities'
+];
+
 export default function Gallery() {
+  const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+
+  const filteredItems = selectedCategory === 'All'
+    ? bentoGalleryItems
+    : bentoGalleryItems.filter(item => item.category === selectedCategory);
 
   // Lightbox Navigation
   const openLightbox = (index) => {
@@ -117,15 +131,15 @@ export default function Gallery() {
 
   const showNext = useCallback(() => {
     if (selectedImageIndex !== null) {
-      setSelectedImageIndex((prev) => (prev + 1) % bentoGalleryItems.length);
+      setSelectedImageIndex((prev) => (prev + 1) % filteredItems.length);
     }
-  }, [selectedImageIndex]);
+  }, [selectedImageIndex, filteredItems.length]);
 
   const showPrev = useCallback(() => {
     if (selectedImageIndex !== null) {
-      setSelectedImageIndex((prev) => (prev - 1 + bentoGalleryItems.length) % bentoGalleryItems.length);
+      setSelectedImageIndex((prev) => (prev - 1 + filteredItems.length) % filteredItems.length);
     }
-  }, [selectedImageIndex]);
+  }, [selectedImageIndex, filteredItems.length]);
 
   // Keyboard navigation for lightbox
   useEffect(() => {
@@ -146,17 +160,31 @@ export default function Gallery() {
         {/* Section Header */}
         <div className="text-center bento-gallery-header">
           <span className="section-tag">
-            <FaImages className="tag-inline-icon" /> फोटो दीर्घा
+            <FaImages className="tag-inline-icon" /> HOSPITAL PHOTO GALLERY
           </span>
-          <h2 className="section-title">अस्पताल दीर्घा एवं गतिविधियां</h2>
+          <h2 className="section-title">Hospital Photo Gallery</h2>
           <p className="section-desc center-block">
-            संत सुखदेव शाह धर्मार्थ चिकित्सालय परिसर, ओपीडी, गहन चिकित्सा (आईसीयू), फार्मेसी एवं आधुनिक एम्बुलेंस सेवाओं की संपूर्ण बेंटो ग्रिड झलकियां।
+            Sant Sukhdev Shah Charitable Hospital, Alwar की फोटो गैलरी में Hospital Campus, OPD, ICU, Ambulance और आधुनिक चिकित्सा सुविधाओं की तस्वीरें देखें।
           </p>
         </div>
 
-        {/* 4-Column Asymmetric Bento Grid (Framer Bento Creator Design) */}
+        {/* Categories from PDF: Hospital Campus, OPD, ICU, Ambulance, Medical Facilities */}
+        <div className="gallery-filter-bar">
+          {galleryFilterCategories.map((cat) => (
+            <button
+              key={cat}
+              type="button"
+              className={`gallery-filter-btn ${selectedCategory === cat ? 'active' : ''}`}
+              onClick={() => setSelectedCategory(cat)}
+            >
+              {cat === 'All' ? 'All Photos' : cat}
+            </button>
+          ))}
+        </div>
+
+        {/* 4-Column Asymmetric Bento Grid */}
         <div className="bento-grid">
-          {bentoGalleryItems.map((item, idx) => (
+          {filteredItems.map((item, idx) => (
             <div 
               key={item.id}
               className={`bento-card ${item.bentoClass}`}
@@ -176,7 +204,7 @@ export default function Gallery() {
                 <img 
                   src={item.src} 
                   alt={item.title} 
-                  className="bento-img"
+                  className="bento-img" 
                   loading="lazy"
                   decoding="async"
                   onError={(e) => {
@@ -185,6 +213,7 @@ export default function Gallery() {
                   }}
                 />
                 <div className="bento-gradient-overlay"></div>
+                <span className="bento-category-tag">{item.category}</span>
               </div>
 
               {/* Hover Zoom / Expand Badge */}
@@ -193,6 +222,11 @@ export default function Gallery() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Bottom Caption from PDF Page 6 */}
+        <div className="gallery-bottom-note">
+          <p>Hospital की सुविधाओं और मरीजों को दी जाने वाली Healthcare Services के बारे में जानें।</p>
         </div>
 
       </div>
